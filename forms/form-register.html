@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+
+
+	@media screen and (max-width: 600px) {
+		input {width:100% !important;}
+		select {width:100% !important;}
+		.p2-xtra{
+		padding-left:0px !important;
+		}
+		.p1-xtra{
+		width:100% !important;
+		}
+		.col-xtra{
+		width:100% !important;
+		}
+		.myalign{
+		text-align:left;
+		}
+		
+		.navbar.fixed-top .navbar-collapse,
+		.navbar.sticky-top .navbar-collapse {
+		overflow-y: auto;
+		max-height: 90vh;
+		margin-top: 10px;
+		}	
+		.txtemail{
+		.width: 100%;
+		}
+		input[type="radio"]{
+		width:20px !important;
+		}
+		.myp-2 {
+		padding: 0.5rem!important;
+		padding-left: 0px !important;
+		}
+
+	}
+	
+	@media only screen and (min-width: 1200px) {
+		.myp-2 {
+		padding: 0.5rem!important;
+}
+		input[type="radio"]{
+		width:20px !important;
+		}
+	.txtemail{
+		.width: 579px;
+		}
+	.post-fun{
+	margin-left:310px;
+	margin-top:53px; 
+	position:absolute;
+	}
+	.myalign{
+	text-align:right;
+	}
+	.navbar .has-megamenu {
+	position: relative !important;
+	}
+
+	.navbar .megamenu {
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin-top: 0;
+	}
+
+
+	}
+
+	body{
+		color:#000000 !important;
+		font-family:Mulish;
+	}
+	ul, li {
+    margin: 0;
+    padding: 0px 10px !important;
+    list-style: none;
+	}
+
+  .site-navigation .navbar-nav a, .trans-navigation .navbar-nav a {
+    text-transform: capitalize !important;
+}
+    label{color:#000;}
+    .hover-white:hover {
+      background-color: white;
+    }
+
+    .navbar-brand img {
+      max-width: 35% !important;
+    }
+
+    .banner-area .content-padding {
+      padding: 150px 0px 100px !important;
+    }
+
+    .banner-2 {
+      margin-top: -117px;
+
+      background: url(images/icon/banner.png) !important;
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .justify-content-end {
+
+      justify-content: flex-start !important;
+    }
+
+    .trans-navigation {
+        background: #0084CA !important;
+        padding: 20px 15px;
+      }
+
+    .service-box {
+      margin-bottom: 25px !important;
+      background: #fff;
+      text-align: left !important;
+      padding: 20px 25px 20px 25px !important;
+    }
+
+    .btn-style {
+      background-color: #F9423A !important;
+      color: white !important;
+      font: 700 !important;
+      font-size: 1rem !important;
+      line-height: 1.75rem !important;
+      padding-top: 0.75rem !important;
+      padding-bottom: 0.75rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+      --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+      --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+      border-radius: 7px !important;
+    }
+
+    .bg-feature {
+      background-color: #ffffff !important;
+    }
+
+    .header-white {
+      position: inherit !important;
+    }
+
+    .fixed-top {
+
+      position: inherit !important;
+    }
+
+    .trans-navigation.header-white {
+      background: #1110 !important;
+    }
+
+    .cards-margin {
+      margin: 25px 0px 25px 0px;
+      height: 270px;
+    }
+
+
+    @media only screen and (min-width: 600px) {
+      img.d-inline-block.pad {
+        margin-left: 87px;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .trans-navigation {
+        background: #4d7c0f !important;
+        padding: 20px 15px;
+      }
+    }
+
+    .service-box:hover {
+      border-color: #d6d6d6;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-expand-lg.trans-navigation .navbar-nav .nav-link,
+    .navbar-expand-lg.site-navigation .navbar-nav .nav-link {
+      padding: 0px 8px !important;
+      color:#ffffff;
+    }
+
+    .navbar .megamenu {
+      padding: 1rem;
+    }
+
+    .dropdown-menu.megamenu {
+      width: 700px;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      min-width: 700px;
+    }
+
+    /* ============ desktop view ============ */
+    @media all and (min-width: 992px) {
+	
+
+    }
+
+    /* ============ desktop view .end// ============ */
+
+
+    /* ============ mobile view ============ */
+    @media(max-width: 991px) {
+    }
+
+    /* ============ mobile view .end// ============ */
+
+    /* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 15px auto;
+  padding: 40px;
+  width: 85%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input, select {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+input {
+  padding: 10px;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
+button, input, optgroup, select, textarea {   
+   border-radius: 9px; 
+}
+
+
+input {  
+   border: 1px solid #dfdddd;
+}
+
+.radio-button input[type="radio"] {
+  display: none;
+}
+input[type="radio"] {
+        width:20px;
+      }      
+      .radio-button label {
+        display: inline-block;
+        padding: 10px 11px;
+        margin: 10px 0px;
+        font-family: Arial;
+        font-size: 18px;
+        cursor: pointer;
+        border: 1px solid #0084ca;
+        border-radius: 9px; 
+      }      
+      .radio-button input[type="radio"]:checked+label {
+        background-color: #76cf9f;
+      }
+	  .col-xtra{
+	  width:12.666667% !important;
+	  }
+	  .navbar-nav{
+	  font-family:Mulish;
+	  font-size:20px;
+	  }
+	  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:hover{
+	  color:red;
+	  }
+	  ::placeholder {
+		color: black;
+	  }
+	  input {border: 1px solid #AAAAAA;}
+	  .btn-style {
+		background-color: #0084CA !important;
+		}
+		.trans-navigation {
+        background: #0084CA !important;
+        padding: 20px 15px;
+      }
+  </style>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>KC BizCare
+  </title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="KC BizCare">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="KC BizCare">
+  <meta name="generator" content="KC BizCare">
+
+  <!-- bootstrap.min css -->
+  <!-- <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <!-- Icofont -->
+  <link rel="stylesheet" href="plugins/icofont/icofont.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="#" type="image/x-icon">
+
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      /////// Prevent closing from click inside dropdown
+      document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+      })
+    });
+// DOMContentLoaded  end
+  </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#mainNav" id="formBody">
+
+  <nav class="navbar navbar-expand-lg fixed-top trans-navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="../images/logo.png" alt="" class="img-fluid b-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Organization<br />Information </a>
+              <i style=" color: #fff;">▼</i>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row">
+                  <div class=" col-6">
+                    <div class="">
+                      <h6 class="title">Title Menu One</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-1.png" class="d-inline-block">
+                                <span class="">Register or update a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-2.png" class="d-inline-block">
+                                <span class="">Register or update <br />a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-6">
+                    <div class="">
+                      <h6 class="title">Title Menu Two</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-3.png" class="d-inline-block">
+                                <span class="">Register or update a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-4.png" class="d-inline-block">
+                                <span class="">Register or update a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                </div><!-- end row -->
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Neighborhood <br />support service </a>
+            <i style=" color: #fff;">▼</i>
+            <div class="dropdown-menu megamenu" role="menu">
+              <div class="row">
+                <div class=" col-6">
+                  <div class="">
+                    <h6 class="title">Title Menu One</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-1.png" class="d-inline-block">
+                              <span class="">Register or update a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-2.png" class="d-inline-block">
+                              <span class="">Register or update <br />a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div> <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+                <div class="col-6">
+                  <div class="">
+                    <h6 class="title">Title Menu Two</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-3.png" class="d-inline-block">
+                              <span class="">Register or update a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-4.png" class="d-inline-block">
+                              <span class="">Register or update a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div> <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+              </div><!-- end row -->
+            </div> <!-- dropdown-mega-menu.// -->
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"> Information <br />& Resources</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </nav>
+
+  <!--MAIN HEADER AREA END -->
+
+
+
+
+
+
+  <!--  SERVICE PARTNER START  -->
+  <section class=" bg-feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 ">
+          <div>
+              <!--MULTI STEP FORM START-->
+        <form id="regForm" action="">
+          
+          <!-- One "tab" for each step in the form: -->
+          
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              What is the name of your neighborhood organization?
+            </h1>
+            <span for="browser">Begin typing the neighborhood organization name here…</span><br /><br />
+            <div>
+            <input list="browsers" name="browser" id="browser" oninput="organizationChoose(event)">
+            <datalist id="browsers">
+            </datalist>
+            </div>
+          </div>
+          
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              What is the name of your neighborhood organization?
+            </h1>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="pt-3">Organization Name</div>  
+              </div>
+              <div class="col-lg-9">
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input placeholder="Organization Name" size="50" id="organizationName">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                Mailing Address
+              </div>
+              <div class="col-lg-8">
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Street Address" size="50"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="City" size="25"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="State" size="6"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Zip Code" size="5"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab radio-button">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              Neighborhood organization information continued…</h1>
+            <h4>Organization type</h4>
+            <div>
+            <label for="optsetogid3">Homes Association, Homeowners Association, Property Owners Association</label>
+            <input type="radio" id="optsetogid3" name="optset2" value="3"><br>
+        	<label for="optsetogid1">Neighborhood Association</label>
+            <input type="radio" id="optsetogid1" name="optset2" value="1"><br>
+            <label for="optsetogid2">Umbrella Organization</label>
+            <input type="radio" id="optsetogid2" name="optset2" value="2"><br>
+            <label for="optsetogid4">Partner Organization</label>
+            <input type="radio" id="optsetogid4" name="optset2" value="4"><br>
+            <label for="optsetogid5">Other</label>
+            <input type="radio" id="optsetogid5" name="optset2" value="5"><br></div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                Organization boundaries<br /><br />
+                <input style="width: 15px;height: 15px;padding: 10px;margin: 1px;" type="checkbox" id="boundaries" name="boundaries" value="boundaries">These boundaries are approximate.
+              </div>
+              <div class="col-lg-8">
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="North Boundry" size="20"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="South Boundry" size="20"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="East Boundry" size="20"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="West Boundry" size="20"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              Neighborhood organization communications
+            </h1>
+            <div class="row">
+              <div class="col-lg-3">
+                Provide links for all resources that apply
+              </div>
+              <div class="col-lg-9">
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Website" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Newsletter sign-up" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="General email" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="General phone" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Facebook" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Twitter" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Instagram" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Other" size="15"></div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              Neighborhood organization meeting information
+            </h1>
+            <div class="row">
+              <div class="col-lg-2 col-xtra"><span>Meeting Type: </span></div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="meeting_type" id="meeting_type" style="width:166px;">
+                <option value="">General meeting</option>
+                <option value="">Annual meeting</option>
+                <option value="">Board meeting</option>
+                <option value="">Public Safety meeting</option>
+                <option value="">Social event (if recurring)</option>
+                <option value="">Neighborhood clean-up (if recurring)</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2 myalign"><span>Frequency 1: </span></div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="frq1" id="frq1" style="width:110px;">
+                <option value="">Monthly</option>
+                <option value="">Even months</option>
+                <option value="">Odd months</option>
+                <option value="">Weekly</option>
+                <option value="">Quarterly</option>
+                <option value="">Annually</option>
+                <option value="">Other contact</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2"><span>Open to the public?</span></div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="public" id="public" style="width:100px;">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2 col-xtra">
+              <span>Format: </span>
+              </div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="format" id="format" style="width:166px;">
+                <option value="">In-person</option>
+                <option value="">Virtual</option>
+                <option value="">Other contact</option>
+                <option value="">organization</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2 myalign"><span>Frequency 2: </span></div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="frq2" id="frq2" style="width:110px;">
+                <option value="">First</option>
+                <option value="">Second</option>
+                <option value="">Third</option>
+                <option value="">Fourth</option>
+                <option value="">Every</option>
+                <option value="">Last</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2"><span>Are elections held?</span></div>
+              <div class="col-lg-2" >
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="elections" id="elections" style="width:100px;">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2 col-xtra"></div>
+        	  <div class="col-lg-2"></div>
+              <div class="col-lg-2 myalign"><span>Frequency 3: </span></div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <select name="frq3" id="frq3" style="width:110px;">
+                <option value="">Sunday</option>
+                <option value="">Monday</option>
+                <option value="">Tuesday</option>
+                <option value="">Wednesday</option>
+                <option value="">Thursday</option>
+                <option value="">Friday</option>
+                <option value="">Saturday</option>
+              </select>
+        	  </div>
+              </div>
+              <div class="col-lg-2">
+              <span>Start Time:</span>
+              </div>
+              <div class="col-lg-2">
+        	  <div class="d-inline-block myp-2 p2-xtra">
+              <input placeholder="0:00" style="width:100px;"><br />
+              <input placeholder="AM/PM" style="width:100px;">
+        	  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2" style="width:126px !important;">
+                Location
+              </div>
+              <div class="col-lg-8">
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Street Address" size="50"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="City" size="25"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="State" size="6"></div>
+                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Zip Code" size="5"></div>
+              </div>
+            </div>
+            <div class="post-fun">
+            <button type="button" class="btn-style btn" >+ ADD MEETING</button>
+            </div>
+          </div>
+           <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              Who are the contacts and/or officers for the organization?
+            </h1>
+        	<div class="row">
+            <div class="col-lg-3">Contact Name</div>
+            <div class="col-lg-9">
+              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="First" size="15"></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Middle" size="15"></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Last" size="15"></div>
+            </div>
+            <div class="col-lg-3">Title</div>
+            <div class="col-lg-4">
+              <div class="d-inline-block myp-2 p2-xtra">
+                <select name="title" id="title" style="width: 562px;">
+                <option value="">Block Watch/Public Safety</option>
+                <option value="">Board Member</option>
+                <option value="">Communications (Web, Social Media, Newsletter)</option>
+                <option value="">Contact Person</option>
+                <option value="">Director</option>
+                <option value="">Events</option>
+                <option value="">Executive Director</option>
+                <option value="">Office Manager</option>
+                <option value="">Parliamentarian</option>
+                <option value="">President</option>
+                <option value="">Property Manager</option>
+                <option value="">Secretary</option>
+                <option value="">Treasurer</option>
+                <option value="">Vice President</option>
+                <option value="">Volunteer Coordinator</option>
+                <option value="">Youth Director</option>
+                </select>
+        	  </div>
+        	  <div class="d-inline-block myp-2 p2-xtra txtemail"><input placeholder="Email Address" size="100"></div>
+        	  </div>
+          <div style="clear: both;"></div>
+        	<div class="col-lg-3">Primary Contact</div>
+            <div class="col-lg-9">
+        		<div class="d-inline-block myp-2 p2-xtra">
+        		<select name="primary-contact" id="primary-contact">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+        	  </div>
+              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Phone" style="width: 280px;"></div>
+            </div>
+        	<div class="col-lg-3">Mailing Address</div>
+            <div class="col-lg-7">
+              <div class="d-inline-block myp-2 p2-xtra"><input size="15" placeholder="Street OR PO Box" ></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input size="15" placeholder="City" ></div>
+        	  <div class="d-inline-block myp-2 p2-xtra"></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input size="15" placeholder="State" ></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input size="5" placeholder="Zip Code" ></div>
+            </div>
+            </div>
+            <div class="post-fun" >
+              <button type="button" class="btn-style btn" >+ ADD CONTACT</button>
+              </div>
+          </div>
+
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+              Registered organization search
+            </h1>
+            <div class="row">
+            <div class="col-lg-3">At least one search criteria is required</div>
+            <div class="col-lg-9">
+              <div class="d-block myp-2 p2-xtra"><input style="width:460px;" placeholder="Organization Name" ></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input size="5" placeholder="Zip Code" ></div>
+              <div class="d-inline-block myp-2 p2-xtra"><input size="55" placeholder="Officer Last Name" ></div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">Council District</div>
+              <div class="col-lg-3">
+                <div class="d-inline-block myp-2 p2-xtra">
+                <select name="council-district" id="council-district" style="width:82px;">
+              <option value="">None</option>
+                </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">Organization type</div>
+              <div class="col-lg-5">
+                <div class="d-inline-block myp-2 p2-xtra">
+              <select name="0rganization-type" id="organization-type" style="width:220px;">
+              <option value="">None</option>
+              </select>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">Report type</div>
+              <div class="col-lg-5">
+                <div class="d-inline-block myp-2 p2-xtra">
+              <select name="report-type" id="report-type" style="width:220px;">
+              <option value="">None</option>
+              </select>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">Organization search results</h1>
+        	<span>For a detailed organization report, select at least one organization from the results below.</span>
+          <br />
+            <input type="radio" id="optsetid1" name="optset5" value="1"><label for="optsetid1">Flying Fig</label><br>
+            <input type="radio" id="optsetid2" name="optset5" value="2"><label for="optsetid2">Flying Saucer</label><br>
+            <input type="radio" id="optsetid3" name="optset5" value="3"><label for="optsetid3">Flying Tootsie Roll</label><br>
+          </div>
+
+          <div class="tab">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">Mailing (contact) search results</h1>
+        	<span>For a mailing (contact) report, select the report format type below.</span><br />
+          <div style="clear:both"></div>
+            <input type="radio" id="optsetid1" name="optset6" value="1"><label for="optsetid1">CSV</label><br>    
+            <input type="radio" id="optsetid2" name="optset6" value="2"><label for="optsetid2">XLS</label><br>    
+        	
+          </div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+          
+          <div style="overflow:auto;">
+            <div style="float:left;">
+              <a id="prevBtn" class="btn" style="padding:0px;color:blue;" onclick="nextPrev(-1)">Back</a>
+
+            </div>
+            <div style="float:right;">
+              <button type="button" id="nextBtn" class="btn-style btn" onclick="nextPrev(1)">Next</button>
+            </div>
+          </div>
+          
+          <!-- Circles which indicates the steps of the form: -->
+          <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+          </div>
+          
+          </form>
+        <!--MULTI STEP FORM END-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  SERVICE PARTNER END  -->
+
+  
+
+
+  <!-- 
+  Essential Scripts
+  =====================================-->
+
+
+  <!-- Bootstrap css -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+  <script src="plugins/google-map/map.js"></script>
+
+  <!-- main script -->
+  <!-- <script src="js/script.js"></script> -->
+<script>
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+  showTab(currentTab); // Display the current tab
+
+  organizationName
+
+  function organizationChoose(event){
+    document.getElementById("organizationName").value= event.target.value;
+  }
+
+  function showTab(n) {
+    // This function will display the specified tab of the form ...
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    // ... and fix the Previous/Next buttons:
+
+    if (n == 0) {
+      document.getElementById("prevBtn").style.display = "none";
+    } else {
+      document.getElementById("prevBtn").style.display = "inline";
+    }
+    if (n == 7) {
+      document.getElementById("nextBtn").innerHTML = "Submit";
+    } else {
+      document.getElementById("nextBtn").innerHTML = "Continue <i class='fas fa-arrow-right	 pr-2' aria-hidden='true'></i>";
+    }
+    // ... and run a function that displays the correct step indicator:
+    fixStepIndicator(n)
+  }
+
+  function nextPrev(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName("tab");
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) return false;
+    // Hide the current tab:
+    x[currentTab].style.display = "none";
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form... :
+    if (currentTab >= x.length) {
+      //...the form gets submitted:
+      document.getElementById("regForm").submit();
+      return false;
+    }
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+  }
+
+  function validateForm() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+      // If a field is empty...
+      if (y[i].value == "") {
+        // add an "invalid" class to the field:
+        y[i].className += " invalid";
+        // and set the current valid status to false:
+        //valid = false;
+      }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    if (valid) {
+      document.getElementsByClassName("step")[currentTab].className += " finish";
+    }
+    return valid; // return the valid status
+  }
+
+  function fixStepIndicator(n) {
+    // This function removes the "active" class of all steps...
+    var i, x = document.getElementsByClassName("step");
+    for (i = 0; i < x.length; i++) {
+      x[i].className = x[i].className.replace(" active", "");
+    }
+    //... and adds the "active" class to the current step:
+    x[n].className += " active";
+  }
+
+  var neighborhoods = {
+    "message":"Success",
+    "rstatus":"1",
+    "data":{"neighborhood_associations":
+    [{"name":"Wornall Pines Neighborhood Association","id":88493},{"name":"2004 Grand Condominium Homes Association","id":88040},{"name":"29/30 Greenwood Urban District","id":88041},{"name":"40-46 North Neighborhood \u0026 Crime Watch","id":88042},{"name":"41/42 Montgall Homeowners Association","id":88043},{"name":"433 Ward Parkway Condominium Association","id":88044},{"name":"46 Jefferson Condominium Homeowners Association","id":88045},{"name":"49/63 Coalition","id":88046},{"name":"67-73 Neighborhood Association","id":88047},{"name":"Adare Manor Homes Association","id":88048},{"name":"Alianzas - West Urban Region","id":88049},{"name":"Amber Meadows/Amber Lakes Subdivisions","id":88050},{"name":"Amherst Neighborhood Association","id":88051},{"name":"Armour Fields Homes Association (incl. Romanelli Gardens)","id":88052},{"name":"Armour Hills Homes Association","id":88053},{"name":"Astor Place Homes Association","id":88054},{"name":"Auburndale Estates/Meadows Homes Association","id":88055},{"name":"Autumn Ridge Home Owners Association","id":88056},{"name":"Avalon View Neighborhood Association","id":88057},{"name":"Bannister Acre Homes Association","id":88058},{"name":"Bannister Acres Neighborhood Association","id":88059},{"name":"Bannister Corridor","id":88060},{"name":"Barrington Ridge Homes Association","id":88061},{"name":"Barry Harbor/Hunter's Ridge Homes Association","id":88062},{"name":"Barry Ridge Homeowners Association","id":88063},{"name":"Barrybrooke Village Homes Association","id":88064},{"name":"Beacon Hill - McFeders Community Council (formerly Beacon Hill - McFeders Neighborhood Association)","id":88065},{"name":"Belle Acres Neighborhood Association","id":88066},{"name":"Benoist","id":88067},{"name":"Bethel Connection 2000","id":88068},{"name":"Beverly Manor Neighborhood Association","id":88069},{"name":"Birchwood Hills Homes Association","id":88070},{"name":"Blue Hills CAN Center","id":88071},{"name":"Blue Hills Homes Association","id":88072},{"name":"Blue Hills Neighborhood Association","id":88073},{"name":"Blue Ridge Area Quality Of Life Initiative","id":88074},{"name":"Blue Ridge Landing Homeowners Association","id":88075},{"name":"Blue Valley Neighborhood Association","id":88076},{"name":"Boone Hills Neighborhood Association","id":88077},{"name":"Boston Heights and Mount Hope Neighborhood Association","id":88078},{"name":"Breen HIlls West","id":88079},{"name":"Briarcliff Hills Neighborhood Association","id":88080},{"name":"Briarcliff West Homes Association (continues into Riverside)","id":88081},{"name":"Briarwood West Homes Association (continues into Oakwood)","id":88082},{"name":"Bridgepointe Homes Association","id":88083},{"name":"Bridlespur Homes Association","id":88084},{"name":"Brighton Crossing HOA","id":88085},{"name":"Brighton Woods North Homeowners Association","id":88086},{"name":"Bristol Park Homes Association","id":88087},{"name":"Brittany Oaks Homes Association","id":88088},{"name":"Brittany Woodscastle Homeowners","id":88089},{"name":"Brooke Hills Homes Association","id":88090},{"name":"Brooke Ridge Homes Association","id":88091},{"name":"Brookhill Homes Association","id":88092},{"name":"Brookside Community Improvement District","id":88093},{"name":"Brookside Park Neighborhood Association","id":88094},{"name":"Brown Estates","id":88095},{"name":"Buelar Acres Neighborhood Association","id":88096},{"name":"Calico Farms Neighborhood Association","id":88097},{"name":"Calumet Homes Association","id":88098},{"name":"CAM Neighborhood Association","id":88099},{"name":"Candlelight  Homeowners Association","id":88100},{"name":"Canterbury Estates Neighborhood Association","id":88101},{"name":"Carriage Hill Estates Homes Association","id":88102},{"name":"Cassell Brook Homes Association (continues into Raytown)","id":88103},{"name":"Center City Neighborhood Council","id":88104},{"name":"Center for Neighborhoods","id":88105},{"name":"Center Planning and Development Council (CPDC)","id":88106},{"name":"Chapel Park Neighborhood Association (continues into Independence)","id":88107},{"name":"Chapel Woods Homeowners","id":88108},{"name":"Charleston Harbor Homes Association","id":88109},{"name":"Chaumiere Neighborhood Association","id":88110},{"name":"Chelsea Park Community Group (formerly Greater Corinthian)","id":88111},{"name":"Chestnut-Jaudon Homes Association","id":88112},{"name":"Chouteau Estates Neighborhood Association","id":88113},{"name":"Citadel Center Homeowners Association","id":88114},{"name":"City Homes Condominium Association","id":88115},{"name":"Claybrook Homes Association","id":88116},{"name":"Claymont Homes Association","id":88117},{"name":"Claymont North Homes Association","id":88118},{"name":"Clayton Meadows West Neighborhood Association","id":88119},{"name":"Clayton Neighborhood Association","id":88120},{"name":"Coachlight Square Homes Association","id":88121},{"name":"Coleman Highlands Neighborhood Association","id":88122},{"name":"Colonial Square Neighborhood Association","id":88123},{"name":"Columbus Park Community Council","id":88124},{"name":"Communities of North Brook","id":88125},{"name":"Cooley Highlands Neighborhood Association (continues into NKC)","id":88126},{"name":"Country Club District Homes Association","id":88127},{"name":"Country Club Homes Association","id":88128},{"name":"Country Club Neighborhood Association","id":88129},{"name":"Country Lane Neighborhood Association","id":88130},{"name":"Country Side Homes Association","id":88131},{"name":"Country Valley Homes Association","id":88132},{"name":"CountrySide Homes Association","id":88133},{"name":"Coventry Homes Association (fomally Coventry-Baughman)","id":88134},{"name":"Coves North Homes Association","id":88135},{"name":"Crestview Homes Association","id":88136},{"name":"Crestwood Homes Association","id":88137},{"name":"Crossgates Homeowners Association (continues into Grandview)","id":88138},{"name":"Crossroads Community Association","id":88139},{"name":"Curls Manor Neighborhood Association","id":88140},{"name":"Davidson Neighborhood Association","id":88141},{"name":"Deerfield Homes Association","id":88142},{"name":"DeGroff Property Owners Association","id":88143},{"name":"Downtown Neighborhood Association","id":88144},{"name":"Dunbar Neighborhood Association","id":88145},{"name":"Dundee Hills Neighborhood Block Watch","id":88146},{"name":"East 23rd St. PAC Neighborhood Association","id":88147},{"name":"East Area Community Coalition (EACC)","id":88148},{"name":"East Meyer Cluster Organization","id":88149},{"name":"East Swope Highlands Neighborhood Association","id":88150},{"name":"Eastwood Hills Community Association","id":88151},{"name":"Embassy Park Homes Assoc.","id":88152},{"name":"Essex Court HOA","id":88153},{"name":"Evans Hill Neighborhood","id":88154},{"name":"Fairfield Homeowners Association","id":88155},{"name":"Fairlane Homes Association","id":88156},{"name":"Fairwood Homes Association","id":88157},{"name":"Falcon Falls Apartments \u0026 Homes","id":88158},{"name":"Fearnedale Neighborhood Association","id":88159},{"name":"Forgotten Homes Neighborhood Association","id":88160},{"name":"Fox Hill Neighborhood Association","id":88161},{"name":"Foxcroft Homes Association","id":88162},{"name":"Foxtown East Neighborhood Association","id":88163},{"name":"Foxtown West Neighborhood Association","id":88164},{"name":"Foxwood Homes Association","id":88165},{"name":"Freymons Addition Neighborhood Association","id":88166},{"name":"Gashland Heights Neighborhood Association","id":88167},{"name":"Gashland Neighborhood Association","id":88168},{"name":"Glen Arbor Estates Homes Association","id":88169},{"name":"Glen Lake Homes Association","id":88170},{"name":"Golden Oaks Neighborhood Association","id":88171},{"name":"Goodwill Township Neighborhood Association","id":88172},{"name":"Gracemor-Randolph Community Council","id":88173},{"name":"Green Meadows Homes Association","id":88174},{"name":"Greenbrier Homes Association","id":88175},{"name":"Greenhaven Neighborhood Association","id":88176},{"name":"Greenway Fields Neighborhood HOA","id":88177},{"name":"Gregory Ridge Neighborhood Association","id":88178},{"name":"Hampton Woods Neighborhood Association (mostly in Parkville/Weatherby Lake)","id":88179},{"name":"Hasson Park Neighborhood Association","id":88180},{"name":"Heart of the City Neighborhood Association","id":88181},{"name":"Heart of Westport Neighborhood Association","id":88182},{"name":"Hickman Mills United Neighborhoods","id":88183},{"name":"Hickory Hollow Homes Association","id":88184},{"name":"Hidden Lakes Homes Association","id":88185},{"name":"Highland Acres-Lakeside Heights Homes Association","id":88186},{"name":"Highland Park Homes Association","id":88187},{"name":"Highland View Neighborhood Association","id":88188},{"name":"Highridge Manor Neighborhood Association (continues into Pleasant Valley)","id":88189},{"name":"Highview/Bent Tree Neighborhood Association (sometimes called The Hidden Jewel Neighborhood)","id":88190},{"name":"Hillcrest Heights Neighborhood Association","id":88191},{"name":"Hills of Rock Creek Homes Association","id":88192},{"name":"Historic East Neighborhood Coalition (HENC)","id":88193},{"name":"Historic Hawthorne Homes Association","id":88194},{"name":"Historic Kansas City","id":88195},{"name":"Historic Manheim Park  Association","id":88196},{"name":"Historic West Bottoms Association","id":88197},{"name":"HOA of Cedar Ridge","id":88198},{"name":"Hodge Park Neighborhood Association","id":88199},{"name":"Holiday Hills North Neighborhood Association, Inc.","id":88200},{"name":"Holmes Garden Neighborhood Assocation","id":88201},{"name":"Holmes Park Neighborhood","id":88202},{"name":"Homes Associations of Kansas City (formerly Homes Associations of the Country Club District, HACCD)","id":88203},{"name":"Hunters Glen North Homes Association","id":88204},{"name":"Huntington Place Homes Association","id":88205},{"name":"Hyde Park Neighborhood Association","id":88206},{"name":"Independence Plaza Neighborhood Council","id":88207},{"name":"Indian Heights Homeowners Association","id":88208},{"name":"Indian Mound Neighborhood Association","id":88209},{"name":"Indianola Neighborhood Association","id":88210},{"name":"Innisbrook Homes Association","id":88211},{"name":"Ivanhoe Neighborhood Council","id":88212},{"name":"Janssen Place Lot Owners Association","id":88213},{"name":"Jefferson Highlands Neighborhood Association","id":88214},{"name":"Jersey Heights Neighborhood Association","id":88215},{"name":"K-A Manor Neighborhood Association","id":88216},{"name":"Kansas City Neighborhood Advisory Council (KCNAC)","id":88217},{"name":"KCI Neighborhood Association (sometimes listed as KCI Homes)","id":88218},{"name":"Kellybrook Homes Association","id":88219},{"name":"Key Coalition Neighborhood Association","id":88220},{"name":"King Rose Hill Neighborhood Association","id":88221},{"name":"Kings Gate HOA","id":88222},{"name":"Kirkside Homes Association","id":88223},{"name":"Kirktown Homes Association","id":88224},{"name":"Klapmeyer Estates Homes Association (also Longview-Grandview Roads Neighborhood Association)","id":88225},{"name":"Klapmeyer Homes Association","id":88226},{"name":"Lakeview Gardens Neighborhood Association","id":88227},{"name":"Lea Manor Homes Association","id":88228},{"name":"Lewis Heights Neighborhood Association","id":88229},{"name":"Linden Hill Homes Association","id":88230},{"name":"Linden Park Estates Neighborhood Association","id":88231},{"name":"Little Blue Valley Homes Association","id":88232},{"name":"Little Village Homes Association","id":88233},{"name":"Local Initiatives Support Corporation of Greater Kansas City (GKC LISC)","id":88234},{"name":"Loma Vista East","id":88235},{"name":"Loma Vista Neighborhood Association","id":88236},{"name":"Loma Vista Neighborhood Association (Original)","id":88237},{"name":"Loma Vista West Neighborhood Association","id":88238},{"name":"Loma Vista West Townhouses","id":88239},{"name":"Longfellow Community Association (formerly Longfellow-Dutch Hill)","id":88240},{"name":"Longview Manor Neighborhood","id":88241},{"name":"Loose Park Homes Association","id":88242},{"name":"Lykins Neighborhood Association","id":88243},{"name":"Maple Park Gardens Neighborhood Association","id":88244},{"name":"Maple Park Neighborhood Council","id":88245},{"name":"Maple Woods Estates Home Owners Association","id":88246},{"name":"Marlborough Community Coalition","id":88247},{"name":"Marlborough East Neighborhood Association","id":88248},{"name":"Martin City Community Improvement District","id":88249},{"name":"Mayfair Homes Association","id":88250},{"name":"McCoy Park Neighbors","id":88251},{"name":"Meadow Lakers Neighborhood Association","id":88252},{"name":"Meadowbrook Heights Neighborhood Association","id":88253},{"name":"Meadowland Homes Association","id":88254},{"name":"Mid America Assistance Coalition (MAAC)","id":88255},{"name":"Mid Oaks Neighborhood Association (Prather)","id":88256},{"name":"Midtown KC Now","id":88257},{"name":"Midtown Tenant Union","id":88258},{"name":"Mission Lake Community Association","id":88259},{"name":"Red Bridge Hills Homes Association","id":88318},{"name":"Monarch Manor Homeowners Association","id":88260},{"name":"MontClair HOA","id":88261},{"name":"Montcrew Homeowner's Association","id":88262},{"name":"Morningside Neighborhood Association","id":88263},{"name":"Mount Cleveland Heights Townhomes","id":88264},{"name":"Mount Cleveland Neighborhood Association","id":88265},{"name":"Mouse Creek Community Association","id":88266},{"name":"Nance Neighborhood Association","id":88267},{"name":"Neighbors United for Action","id":88268},{"name":"New Bedford Heights Neighborhood Association","id":88269},{"name":"New Mark Crossing Homes Association","id":88270},{"name":"New Mark First Pool Association","id":88271},{"name":"New Mark First Townhouse Homes Association","id":88272},{"name":"Newcastle HOA","id":88273},{"name":"No More Excuses Neighborhood Association","id":88274},{"name":"NOBLE Neighborhood Association","id":88275},{"name":"North Amity Neighborhood Coalition","id":88276},{"name":"North Beacon Hill Neighborhood Association","id":88277},{"name":"North Bennington Neighborhood Association","id":88278},{"name":"North Blue Ridge Neighborhood Association","id":88279},{"name":"North Hampton Homes Association","id":88280},{"name":"North Lakes Homes Association","id":88281},{"name":"North Lakes Meadows Homeowners Association","id":88282},{"name":"North Star Neighborhood Association","id":88283},{"name":"Northeast Alliance Together (NEAT)","id":88284},{"name":"Northland Neighborhoods, Inc. (N.N.I. Or NNI)","id":88285},{"name":"Northview Homeowners Association","id":88286},{"name":"Oak Hill Lake Homeowners Association","id":88287},{"name":"Oak Meyer Gardens Homes Association","id":88288},{"name":"Oak Park Neighborhood Association","id":88289},{"name":"Oakdell Homes Association","id":88290},{"name":"Oakhill Estates Homes Association, Inc.","id":88291},{"name":"Old Briarcliff Homes Association","id":88292},{"name":"Old Hyde Park Historic District Neighborhood Association, Inc.","id":88293},{"name":"Old Maple Park Neighborhood Association","id":88294},{"name":"Old Westport Neighborhood Association","id":88295},{"name":"Oldham Farms  Group Association","id":88296},{"name":"Osage Trail Station Neighborhood, Inc.","id":88297},{"name":"Parade Park Homes, Inc.","id":88298},{"name":"Park Farms Neighborhood Watch","id":88299},{"name":"Park Plaza Home Owners Association","id":88300},{"name":"Park Ridge Homes Association","id":88301},{"name":"Parkview Manor Homes Association","id":88302},{"name":"Parkway Village HOA","id":88303},{"name":"Paseo Heights Neighborhood Association","id":88304},{"name":"Paseo West Neighborhood Association","id":88305},{"name":"Patterson Highlands Neighborhood Association","id":88306},{"name":"Pendleton Heights Neighborhood Association","id":88307},{"name":"Platte Brooke Homes Association","id":88308},{"name":"Platte Ridge Neighborhood Association (name may change)","id":88309},{"name":"Plaza Westport Neighborhood Association","id":88310},{"name":"Presidential Park HOA","id":88311},{"name":"Quail Creek Neighborhood Association","id":88312},{"name":"Quality Hill Neighborhood Watch","id":88313},{"name":"Randolph Corners Neighborhood Association","id":88314},{"name":"Ravenwood Summerset Neighborhood Association","id":88315},{"name":"Red Bridge Estates Homes Association","id":88316},{"name":"Red Bridge Greens HOA","id":88317},{"name":"Red Bridge Homes Association","id":88319},{"name":"Red Bridge Manor Homes Association","id":88320},{"name":"Red Bud Estates Neighborhood Association","id":88321},{"name":"Renaissance Coves Homes Association","id":88322},{"name":"Renaissance Place Homes Association","id":88323},{"name":"Restore Neighborhood Association","id":88324},{"name":"Riss Valley Homes Association","id":88325},{"name":"River Forest Neighborhood Association (continues into North KC)","id":88326},{"name":"River Park Townhomes Homes Association","id":88327},{"name":"Riverview Neighborhood Association","id":88328},{"name":"Roanoke Homes Association","id":88329},{"name":"Robandee Neighborhood Association","id":88330},{"name":"Robincrest Village Homes Association","id":88331},{"name":"Rockhill Crest Neighborhood Association","id":88332},{"name":"Rockhill Gardens Neighborhood Association","id":88333},{"name":"Rockhill Homes Association","id":88334},{"name":"Rockhill Manor Homes Association","id":88335},{"name":"Rockhill Manor Neighborhood Association","id":88336},{"name":"Rockhill Ridge Neighborhood Association","id":88337},{"name":"Rockwell Homes Association","id":88338},{"name":"Rolling Hills Neighborhood Association","id":88339},{"name":"Rolling Hills South Homes Association","id":88340},{"name":"Rolling Meadows Homes Association","id":88341},{"name":"Romanelli West Homes Association","id":88342},{"name":"Roosterville","id":88343},{"name":"Royal Oaks Community Coalition","id":88344},{"name":"Royal Oaks Neighborhood Association (North)","id":88345},{"name":"Royal Oaks Neighborhood Association (South)","id":88346},{"name":"Royal Oaks of Etem","id":88347},{"name":"Ruskin Heights Homes Association","id":88348},{"name":"Ruskin Hills Homes Association","id":88349},{"name":"Russell Manor Homes Association","id":88350},{"name":"Sacred Heart Homes Association (Westside)","id":88351},{"name":"Santa Fe Area Council","id":88352},{"name":"Santa Fe Hills Homes Association","id":88353},{"name":"Scarritt Renaissance Neighborhood Association","id":88354},{"name":"Searcy Cove Homeowners","id":88355},{"name":"Searcy Creek Parkway Neighborhood Association","id":88356},{"name":"Second Baptist Neighborhood Association","id":88357},{"name":"Seven Oaks Neighborhood Association","id":88358},{"name":"Sheffield Neighborhood Association","id":88359},{"name":"Sheraton Estates Neighborhood Association","id":88360},{"name":"Sherwood Estates Homes Association","id":88361},{"name":"Sherwood Estates Homes Association","id":88362},{"name":"Shoal Brook II Neighborhood Association","id":88363},{"name":"Shoal Creek Valley Owners Association","id":88364},{"name":"Silvertooth Fahey Farm Homes Association","id":88365},{"name":"Skyline Homes Association","id":88366},{"name":"Somerbrook Homes Association, Inc.","id":88367},{"name":"Somerset Gardens Homeowners Association","id":88368},{"name":"Somerset Valley Homes Association","id":88369},{"name":"South Kansas City Alliance","id":88370},{"name":"South Longview Lake Neighborhood Association (name may change)","id":88371},{"name":"South Oakwood Homes Association","id":88372},{"name":"South Plaza Neighborhood Association","id":88373},{"name":"South Round Top Neighborhood Association","id":88374},{"name":"Southern Communities Coalition","id":88375},{"name":"Southern Hills Subdivision \u0026 Annex Homes Association","id":88376},{"name":"Southmoreland Neighborhood Association","id":88377},{"name":"Southtown Council","id":88378},{"name":"Southview Manor Homeowner's Association (continues into Grandview)","id":88379},{"name":"Southview Neighborhood Association","id":88380},{"name":"Springhaven Neighborhood Association","id":88381},{"name":"Squier Park Neighborhood Association","id":88382},{"name":"Squire's Hill Neighborhood Association","id":88383},{"name":"St. Catherine's Gardens Neighborhood Association","id":88384},{"name":"Staley Farm Homeowners Association","id":88385},{"name":"Staley Hills Neighborhood","id":88386},{"name":"Sterling Acres Neighborhood Association","id":88387},{"name":"Stone Ridge Town Homes  Association","id":88388},{"name":"Stonehenge Homes Association","id":88389},{"name":"Stoney Brook Home Association","id":88390},{"name":"Stratford Estates Homes Association","id":88391},{"name":"Stratford Gardens Homes Association","id":88392},{"name":"Stratford Place Townhomes Association","id":88393},{"name":"Strathbury Woods Homes Association","id":88394},{"name":"Sugar Tree Estates Homes Association","id":88395},{"name":"Summerbrook Homes Association","id":88396},{"name":"Summerfield Neighborhood Association","id":88397},{"name":"Summit Wood Property Owners Association","id":88398},{"name":"Sunnyslope Hills Neighborhood Association","id":88399},{"name":"Sunrise (CDC) Gateway Neighborhood Association","id":88400},{"name":"Sunset Dixon Neighborhood Association","id":88401},{"name":"Sunset Hill Neighborhood Association","id":88402},{"name":"Sunset Hills Homes Association","id":88403},{"name":"Swope Parkway/Elmwood Neighborhood Association (S.P.E.N.A. or SPENA)","id":88404},{"name":"Swope Ridge Neighborhood Association","id":88405},{"name":"Teetering Heights Villas","id":88406},{"name":"Telford Manor Neighborhood Association","id":88407},{"name":"Terrace Lake Gardens Homes Association","id":88408},{"name":"The Coves Homes Owners Association","id":88409},{"name":"The Fairways Homes Association","id":88410},{"name":"The Glen Oaks Homes Association","id":88411},{"name":"The Meadows Homeowners Association","id":88412},{"name":"The Villas at Tiffany Woods","id":88413},{"name":"Thistle Homes Association","id":88414},{"name":"Tiffany Manor Neighborhood Association","id":88415},{"name":"Tiffany Place Homeowners Association","id":88416},{"name":"Tiffany Springs Neighborhood Association","id":88417},{"name":"Tiffany Woods Homes Association","id":88418},{"name":"Timber Hill Estates Homes Association","id":88419},{"name":"Timber Trace Homes Association","id":88420},{"name":"Timber Valley Homes Association (continues into Raytown)","id":88421},{"name":"Timbers East Townhomes","id":88422},{"name":"Town Fork Creek Neighborhood Association","id":88423},{"name":"Trails of Northbrook Homes Association","id":88424},{"name":"Tremont Manor","id":88425},{"name":"Tremont Manor Homes Association","id":88426},{"name":"Tri-Blenheim Neighborhood Association","id":88427},{"name":"Troost Avenue Community Improvement District","id":88428},{"name":"Troost Avenue Lawn Neighborhood Association","id":88429},{"name":"Troost Coalition","id":88430},{"name":"Troost Plateau Neighborhood Association","id":88431},{"name":"Troostwood Neighborhood Association","id":88432},{"name":"Union Hill Neighborhood Association","id":88433},{"name":"United Neighborhood Association","id":88434},{"name":"Unity Ridge Property Owners Association","id":88435},{"name":"Unity Ridge Property Owners Association","id":88436},{"name":"Valentine Neighborhood Association","id":88437},{"name":"Valley Brook Homes Association","id":88438},{"name":"Valley View Homes Association","id":88439},{"name":"Verona Hills Homes Association","id":88440},{"name":"View High Drive North Neighborhood Association","id":88441},{"name":"Villa Meadows HOA","id":88442},{"name":"Village Glen Homes Association","id":88443},{"name":"Villas Property Owners Association","id":88444},{"name":"Vineyard Estates Neighborhood United Association","id":88445},{"name":"Vineyard Neighborhood Association","id":88446},{"name":"Vineyard Village Neighborhood Association","id":88447},{"name":"Volker Neighborhood Association","id":88448},{"name":"Vrooman Acres Neighborhood Association","id":88449},{"name":"Walden Homeowners Association","id":88450},{"name":"Waldo Community Improvement District","id":88451},{"name":"Waldo Tower Neighborhood Association","id":88452},{"name":"Walnut Grove Neighborhood Association","id":88453},{"name":"Walnut Ridge Homes Association","id":88454},{"name":"Walnut Woods Homeowners Association","id":88455},{"name":"Ward Parkway Estates Homes Association","id":88456},{"name":"Ward Parkway Homes Association","id":88457},{"name":"Ward Parkway Plaza Neighborhood Association","id":88458},{"name":"Washington Wheatly Neighborhood Association","id":88459},{"name":"Wedgewood Pointe Property Owner Association","id":88460},{"name":"Wellington Green Homes Association","id":88461},{"name":"Wendell Phillips and Downtown East Neighborhood Association","id":88462},{"name":"West Bannister Neighborhood Association","id":88463},{"name":"West Plaza Neighborhood Association","id":88464},{"name":"West Waldo Neighborhood Association","id":88465},{"name":"Westchester Homes Association","id":88466},{"name":"Western Blue Township Homeowners Association","id":88467},{"name":"Western Hills Homes Association","id":88468},{"name":"Western Riss Lake Neighborhood Association","id":88469},{"name":"Westport Neighbors United","id":88470},{"name":"Westside CAN Center","id":88471},{"name":"Westside Central Neighborhood Association","id":88472},{"name":"Westside Neighborhood Association","id":88473},{"name":"Westwood Park Homes Association","id":88474},{"name":"White Oaks West Neighborhood Association (formerly Southern Comfort)","id":88475},{"name":"Wildberry Neighborhood Association","id":88476},{"name":"Wildwood West Homeowner's Association","id":88477},{"name":"Willow Brooke Homes Association","id":88478},{"name":"Willow Farm Pool and Homes Association","id":88479},{"name":"Willows Neighborhood Association","id":88480},{"name":"Wing and Steen","id":88481},{"name":"Winnwood Gardens Neighborhood Association","id":88482},{"name":"Winnwood-Sunnybrook Community Council","id":88483},{"name":"Woodbridge Homes Association","id":88484},{"name":"Woodbrooke Villas II Homes Association","id":88485},{"name":"Woodfield Homes Association","id":88486},{"name":"Woodgate Farms Homes Association","id":88487},{"name":"Woodglen Estates Association","id":88488},{"name":"Woodridge Estates Neighborhood Association","id":88489},{"name":"Woodridge Neighborhood Association","id":88490}]}};
+
+    window.addEventListener("load", (event) => {
+      let nieghborhoodsCall = neighborhoods.data.neighborhood_associations.forEach((neighborhood) => {
+        document.getElementById("browsers").innerHTML += "<option value=" + neighborhood.name + ">";
+      })
+    });
+
+  document.getElementById("browsers").addEventListener('input', (event)=> {
+    var opt = $('option[value="'+$(this).val()+'"]');
+    alert(opt.length ? opt.attr('id') : 'NO OPTION');
+  });
+
+  </script>
+</body>
+
+</html>

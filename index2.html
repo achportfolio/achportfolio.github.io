@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+  <style>
+	body{
+		color:#000000 !important;
+		font-family:Mulish;
+	}
+	ul, li {
+    margin: 0;
+    padding: 0px 10px !important;
+    list-style: none;
+	}
+
+  .site-navigation .navbar-nav a, .trans-navigation .navbar-nav a {
+    text-transform: capitalize !important;
+}
+    label{color:#000;}
+    .hover-white:hover {
+      background-color: white;
+    }
+
+    .navbar-brand img {
+      max-width: 35% !important;
+    }
+
+    .banner-area .content-padding {
+      padding: 150px 0px 100px !important;
+    }
+
+    .banner-2 {
+      margin-top: -117px;
+
+      background: url(images/icon/banner2.png) !important;
+      background-size: cover !important;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .justify-content-end {
+
+      justify-content: flex-start !important;
+    }
+
+    .service-box {
+      margin-bottom: 25px !important;
+      background: #fff;
+      text-align: left !important;
+      padding: 20px 25px 20px 25px !important;
+    }
+
+    .btn-style {
+      background-color: #F9423A !important;
+      color: white !important;
+      font: 700 !important;
+      font-size: 1rem !important;
+      line-height: 1.75rem !important;
+      padding-top: 0.75rem !important;
+      padding-bottom: 0.75rem !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+      --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
+      --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+      border-radius: 7px !important;
+    }
+
+    .bg-feature {
+      background-color: #ffffff !important;
+    }
+
+    .header-white {
+      position: inherit !important;
+    }
+
+    .fixed-top {
+
+      position: inherit !important;
+    }
+
+       @media (max-width: 575.98px) {
+      .trans-navigation {
+        background: #4d7c0f !important;
+        padding: 20px 15px;
+      }
+    }
+
+
+    .cards-margin {
+      margin: 25px 0px 25px 0px;
+      height: 300px;
+    }
+
+/*    @media (max-width: 575.98px){
+      .trans-navigation {
+      background: transparent !important;
+      padding: 20px 15px;
+      }
+    }*/
+    @media only screen and (min-width: 600px) {
+      img.d-inline-block.pad {
+        margin-left: 87px;
+      }
+    }
+
+    .service-box:hover {
+      border-color: #d6d6d6;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link,
+  .navbar-expand-lg.site-navigation .navbar-nav .nav-link {
+    padding: 0px 8px !important;
+  }
+  .navbar .megamenu{ padding: 1rem; }
+  .dropdown-menu.megamenu { width: 700px;}
+  .navbar-expand-lg .navbar-nav .dropdown-menu{min-width:700px;}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+.navbar .has-megamenu{position:relative !important;}
+.navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+.navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+	overflow-y: auto;
+ max-height: 90vh;
+ margin-top:10px;
+}
+}
+/* ============ mobile view .end// ============ */
+	  .navbar-nav{
+	  font-family:Mulish;
+	  font-size:20px;
+	  }
+	  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:hover{
+	  color:red;
+	  }
+</style>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>KC BizCare
+  </title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="KC BizCare">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="KC BizCare">
+  <meta name="generator" content="KC BizCare">
+  <!-- bootstrap.min css -->
+  <!-- <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- fontawesome css -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <!-- Icofont -->
+  <link rel="stylesheet" href="plugins/icofont/icofont.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Favicon-->
+  <link rel="icon" href="#" type="image/x-icon">
+<script>
+$(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+</script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(){
+      /////// Prevent closing from click inside dropdown
+      document.querySelectorAll('.dropdown-menu').forEach(function(element){
+        element.addEventListener('click', function (e) {
+          e.stopPropagation();
+        });
+      })
+    }); 
+// DOMContentLoaded  end
+</script>
+</head>
+
+<body data-spy="scroll" data-target="#mainNav">
+
+  <nav class="navbar navbar-expand-lg fixed-top trans-navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" alt="" class="img-fluid b-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Organization<br />Information </a>
+              <i style=" color: #fff;">▼</i>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row">
+                  <div class=" col-6">
+                    <div class="">
+                      <h6 class="title">Title Menu One</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-1.png" class="d-inline-block">
+                                <span class="">Register or update a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-2.png" class="d-inline-block">
+                                <span class="">Register or update <br />a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                  <div class="col-6">
+                    <div class="">
+                      <h6 class="title">Title Menu Two</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-3.png" class="d-inline-block">
+                                <span class="">Register or update a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="service-box ">
+                            <div class="row">
+                              <div class="col">
+                                <img src="images/icon/menu-4.png" class="d-inline-block">
+                                <span class="">Register or update a neighborhood organization</span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div> <!-- col-megamenu.// -->
+                  </div><!-- end col-3 -->
+                </div><!-- end row -->
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
+          <li class="nav-item dropdown has-megamenu">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Neighborhood <br />support service </a>
+            <i style=" color: #fff;">▼</i>
+            <div class="dropdown-menu megamenu" role="menu">
+              <div class="row">
+                <div class=" col-6">
+                  <div class="">
+                    <h6 class="title">Title Menu One</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-1.png" class="d-inline-block">
+                              <span class="">Register or update a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-2.png" class="d-inline-block">
+                              <span class="">Register or update <br />a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div> <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+                <div class="col-6">
+                  <div class="">
+                    <h6 class="title">Title Menu Two</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-3.png" class="d-inline-block">
+                              <span class="">Register or update a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="service-box ">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/icon/menu-4.png" class="d-inline-block">
+                              <span class="">Register or update a neighborhood organization</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div> <!-- col-megamenu.// -->
+                </div><!-- end col-3 -->
+              </div><!-- end row -->
+            </div> <!-- dropdown-mega-menu.// -->
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"> Information <br />& Resources</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </nav>
+  <!--MAIN HEADER AREA END -->
+
+  <!--MAIN BANNER AREA -->
+  <div class="banner-area banner-2">
+    <div class="d-table">
+      <div class="d-table-cell">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10  text-left col-sm-12 col-md-12">
+              <div class="banner-content content-padding">
+                <p class="text-white text-xl-left mb-2 "
+                  style="font-size: 48px; font-weight: 100; padding-bottom:20px;"></p>
+
+                <i class="fa fa-home pr-2 text-white" aria-hidden="true" class="d-inline-block text-white"></i>
+                <i class="fa fa-chevron-right pr-2 text-white " aria-hidden="true"
+                  class="d-inline-block text-white"></i>
+                <p class="d-inline-block text-white">
+                  Financial Assistance Programs
+                </p>
+                <h1 class="banner-title" style=" font-weight: 900;">Neighborhood Grant <br> Programs & Incentives </h1>
+                <p class="text-white" style="font-size: 24px; font-weight: 100; ">Learn more about grant programs and
+                  incentives for residents and neighborhood organizations.</p>
+                <br>
+                <br>
+                <br>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--MAIN HEADER AREA END -->
+
+
+
+
+
+
+
+
+
+  <!--  SERVICE AREA START  -->
+
+  <section id="service-head" class=" bg-feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 ">
+          <div class="text-white">
+            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+            </h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  SERVICE AREA START  -->
+  <section id="service">
+    <div class="container">
+      <div class="row">
+
+        <!--  FILTER BUTTON -->
+        <div class="col-lg-12 col-sm-12 col-md-12">
+          <div class="">
+
+
+            <div class="text-left">
+              <p class="d-inline-block">Filter</p>
+              <button  class="d-inline-block btn btn-danger filter-button" data-filter="deadline">Deadline</button>
+              <button type="btnbutton" class="d-inline-block btn btn-success filter-button" data-filter="loan">Loan</button>
+              <button type="button" class="d-inline-block btn btn-danger filter-button" data-filter="grant" style="background-color: #4d7c0f;">Grant</button>
+              <button type="btnbutton" class="d-inline-block btn btn-success filter-button" data-filter="local" style="background-color: #0084ca">Local</button>
+              <button type="button" class="d-inline-block btn btn-danger filter-button" data-filter="federal" style="background-color: #2563eb">Federal</button>
+			  <button class="filter-button" data-filter="all">Show All</button>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+
+        <!--  SERVICE BOX 1  -->
+        <div class="col-lg-4 col-sm-6 col-md-6 filter deadline">
+          <div class="card shadow cards-margin">
+            <div class="card-body">
+              <img src="images/icon/uni-1.png" alt="Nature"
+              class="responsive" style="float: right;;">
+              
+              
+              <h4>Public Improvements<br>Advisory Committee (PIAC)</h4>
+
+              <p>Short description text<br>[direct link]
+              </p>
+              <button type="button" class=" btn btn-danger " style="background-color: #DB3545;">Grant</button>
+
+            </div>
+            <div class="card-footer bg-light">
+              <button class="btn" style="padding: 10px; color:#0069A1;">Learn more
+                <i class="fas fa-arrow-right	 pr-2" aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--  SERVICE BOX 2  -->
+        <div class="col-lg-4 col-sm-6 col-md-6 filter loan">
+          <div class="card shadow cards-margin">
+            <div class="card-body">
+              <img src="images/icon/uni-2.png" alt="Nature"
+              class="responsive" style="float: right;;">
+              
+              <h4>Neighborhood Tourism <br>Development Fund (NTDF)</h4>
+
+              <p>Short description text <br>[direct link]
+              </p>
+              <button type="button" class=" btn btn-danger " style="background-color: #188351;">Grant</button>
+            </div>
+            <div class="card-footer bg-light">
+              <button class="btn" style="padding: 10px; color:#0069A1;">Learn more
+                <i class="fas fa-arrow-right	 pr-2" aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!--  SERVICE BOX 3  -->
+        <div class="col-lg-4 col-sm-6 col-md-6 filter grant">
+          <div class="card shadow cards-margin">
+            <div class="card-body">
+              <img src="images/icon/uni-3.png" alt="Nature"
+                class="responsive" style="float: right;;">
+              
+              <h4>ReBuild KC</h4>
+
+              <p>Short description text<br>[direct link]</p>
+              <button type="button" class=" btn btn-danger " style="background-color: #4D7C0F;">Grant</button>
+            </div>
+            <div class="card-footer bg-light">
+              <button class="btn" style="padding: 10px; color:#0069A1;">Learn more
+                <i class="fas fa-arrow-right	 pr-2" aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+        <!--  SERVICE BOX 4  -->
+        <div class="col-lg-4 col-sm-6 col-md-6 filter local">
+          <div class="card shadow cards-margin">
+            <div class="card-body">
+              <img src="images/icon/uni-2.png" alt="Nature"
+              class="responsive" style="float: right;;">
+              
+              <h4>Home Repair Services<br>and Programs</h4>
+
+              <p>Short description text<br>[direct link]
+              </p>
+              <button type="button" class=" btn btn-danger " style="background-color: #4d7c0f;">Grant</button>
+            </div>
+            <div class="card-footer bg-light">
+              <button class="btn" style="padding: 10px; color:#0084CA;">Learn more
+                <i class="fas fa-arrow-right	 pr-2" aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--  SERVICE BOX 5  -->
+        <div class="col-lg-4 col-sm-6 col-md-6 filter federal">
+          <div class="card shadow cards-margin">
+            <div class="card-body">
+              <img src="images/icon/uni-5.png" alt="Nature"
+              class="responsive" style="float: right;;">
+              
+              <h4>Violence Prevention</h4>
+
+              <p>Short description text<br>[direct link]
+              </p>
+              <button type="button" class=" btn btn-danger " style="background-color: #2563EB;">Grant</button>
+            </div>
+            <div class="card-footer bg-light">
+              <button class="btn" style="padding: 10px; color:#0069A1;">Learn more
+                <i class="fas fa-arrow-right	 pr-2" aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+        <!--  SERVICE BOX 6 -->
+        <div class="col-lg-4 col-sm-6 col-md-6 filter loan">
+          <div class="card shadow cards-margin">
+            <div class="card-body">
+              <img src="images/icon/uni-1.png" alt="Nature"
+              class="responsive" style="float: right;;">
+              
+              <h4>Open card</h4>
+
+              <p>Short description text<br>[direct link]
+              </p>
+              <button type="button" class=" btn btn-danger " style="background-color: #0084CA;">Grant</button>
+            </div>
+            <div class="card-footer bg-light">
+              <button class="btn" style="padding: 10px; color:#0069A1;">Learn more
+                <i class="fas fa-arrow-right	 pr-2" aria-hidden="true"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+  <!--  SERVICE AREA END  -->
+
+  <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+  <!-- Main jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap css -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script> 
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+  <script src="plugins/google-map/map.js"></script>
+
+  <!-- main script -->
+  <!-- <script src="js/script.js"></script> -->
+
+</body>
+
+</html>
