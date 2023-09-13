@@ -695,12 +695,13 @@ input[type="radio"] {
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="meeting_type" id="meeting_type" style="width:166px;">
-                  <option value="">General meeting</option>
-                  <option value="">Annual meeting</option>
-                  <option value="">Board meeting</option>
-                  <option value="">Public Safety meeting</option>
-                  <option value="">Social event (if recurring)</option>
-                  <option value="">Neighborhood clean-up (if recurring)</option>
+                  <option value="General meeting">General meeting</option>
+                  <option value="Annual meeting">Annual meeting</option>
+                  <option value="Board meeting">Board meeting</option>
+                  <option value="Public safety meeting">Public Safety meeting</option>
+                  <option value="Social event">Social event (if recurring)</option>
+                  <option value="Neighborhood clean-up">Neighborhood clean-up (if recurring)</option>
+                  <option value="Neighborhood Association">Neighborhood Association</option>
                 </select>
           	  </div>
                 </div>
@@ -708,13 +709,13 @@ input[type="radio"] {
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="frq1" id="frq1" style="width:110px;">
-                  <option value="">Monthly</option>
-                  <option value="">Even months</option>
-                  <option value="">Odd months</option>
-                  <option value="">Weekly</option>
-                  <option value="">Quarterly</option>
-                  <option value="">Annually</option>
-                  <option value="">Other contact</option>
+                  <option value="Monthly">Monthly</option>
+                  <option value="Even Months">Even months</option>
+                  <option value="Odd Months">Odd months</option>
+                  <option value="Weekly">Weekly</option>
+                  <option value="Quarterly">Quarterly</option>
+                  <option value="Annually">Annually</option>
+                  <option value="Other Contact">Other contact</option>
                 </select>
           	  </div>
                 </div>
@@ -722,8 +723,8 @@ input[type="radio"] {
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="public" id="public" style="width:100px;">
-                  <option value="">Yes</option>
-                  <option value="">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                 </select>
           	  </div>
                 </div>
@@ -733,10 +734,10 @@ input[type="radio"] {
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="format" id="format" style="width:166px;">
-                  <option value="">In-person</option>
-                  <option value="">Virtual</option>
-                  <option value="">Other contact</option>
-                  <option value="">organization</option>
+                  <option value="In-Person">In-person</option>
+                  <option value="Virtual">Virtual</option>
+                  <option value="Other Contact">Other contact</option>
+                  <option value="Orginization">organization</option>
                 </select>
           	  </div>
                 </div>
@@ -744,12 +745,12 @@ input[type="radio"] {
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="frq2" id="frq2" style="width:110px;">
-                  <option value="">First</option>
-                  <option value="">Second</option>
-                  <option value="">Third</option>
-                  <option value="">Fourth</option>
-                  <option value="">Every</option>
-                  <option value="">Last</option>
+                  <option value="First">First</option>
+                  <option value="Second">Second</option>
+                  <option value="Third">Third</option>
+                  <option value="Fourth">Fourth</option>
+                  <option value="Every">Every</option>
+                  <option value="Last">Last</option>
                 </select>
           	  </div>
                 </div>
@@ -757,8 +758,8 @@ input[type="radio"] {
                 <div class="col-lg-2" >
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="elections" id="elections" style="width:100px;">
-                  <option value="">Yes</option>
-                  <option value="">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                 </select>
           	  </div>
                 </div>
@@ -768,13 +769,13 @@ input[type="radio"] {
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
                 <select name="frq3" id="frq3" style="width:110px;">
-                  <option value="">Sunday</option>
-                  <option value="">Monday</option>
-                  <option value="">Tuesday</option>
-                  <option value="">Wednesday</option>
-                  <option value="">Thursday</option>
-                  <option value="">Friday</option>
-                  <option value="">Saturday</option>
+                  <option value="Sunday">Sunday</option>
+                  <option value="Monday">Monday</option>
+                  <option value="Tuesday">Tuesday</option>
+                  <option value="Wednesday">Wednesday</option>
+                  <option value="Thursday">Thursday</option>
+                  <option value="Friday">Friday</option>
+                  <option value="Saturday">Saturday</option>
                 </select>
           	  </div>
                 </div>
@@ -783,8 +784,8 @@ input[type="radio"] {
                 </div>
                 <div class="col-lg-2">
           	  <div class="d-inline-block myp-2 p2-xtra">
-                <input placeholder="0:00" style="width:100px;"><br />
-                <input placeholder="AM/PM" style="width:100px;">
+                <input placeholder="0:00" id="meeting_time" style="width:100px;"><br />
+                <input placeholder="AM/PM" id="meeting_ampm" style="width:100px;">
           	  </div>
                 </div>
               </div>
@@ -793,13 +794,22 @@ input[type="radio"] {
                   Location
                 </div>
                 <div class="col-lg-8">
-                  <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Street Address" size="50"></div>
-                  <div class="d-inline-block myp-2 p2-xtra"><input placeholder="City" size="25"></div>
-                  <div class="d-inline-block myp-2 p2-xtra"><input placeholder="State" size="6"></div>
-                  <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Zip Code" size="5"></div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="Street Address" id="meeting_address" size="50">
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="City" id="meeting_city" size="25">
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="State" id="meeting_state" size="6">
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="Zip Code" id="meeting_zip" size="5">
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="post-fun">
             <div class="meetingCount">
               <p>Meetings: 1</p>
@@ -1006,14 +1016,101 @@ input[type="radio"] {
   var neighborhoods = JSON.parse(sessionStorage.neighborhoods)
   console.log(neighborhoods)
 
+  var chosenNeighborhood = {
+            "name": "Flying Fig",
+            "id": 66332,
+            "address": "115",
+            "street": "31ST St",
+            "suite_number": "",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10001",
+            "organization_type": "Homes Assc",
+            "status": "Active",
+            "website": null,
+            "email": null,
+            "facebook": null,
+            "instagram": null,
+            "twitter": null,
+            "nextdoor": null,
+            "newsletter": null,
+            "phone": null,
+            "contacts": [
+                {
+                    "id": 91321,
+                    "first_name": "Chewy",
+                    "middle_name": null,
+                    "last_name": "Baca",
+                    "title": "Chewbacka Properties Limited",
+                    "email": "chewy@solo.com",
+                    "primary": false,
+                    "phone": "3331233214",
+                    "address": "115",
+                    "street": "31ST St",
+                    "suite_number": "",
+                    "state": "NY",
+                    "zip": "10001"
+                },
+                {
+                    "id": 91466,
+                    "first_name": "Hans",
+                    "middle_name": null,
+                    "last_name": "Solo",
+                    "title": "Scoundral",
+                    "email": "han@solo.com",
+                    "primary": false,
+                    "phone": "1233211234",
+                    "address": "115",
+                    "street": "31ST St",
+                    "suite_number": "",
+                    "state": "NY",
+                    "zip": "10001"
+                }
+            ],
+            "meetings": [
+                {
+                    "id": 1,
+                    "meeting_kind": "Neighborhood Association",
+                    "format": "Virtual",
+                    "frequency_1": "Monthly",
+                    "frequency_2": "First",
+                    "frequency_3": "Saturday",
+                    "open_to_public": true,
+                    "elections_held": "false",
+                    "start_time": "2000-01-01T18:00:00.000Z",
+                    "address": "1234 main ave",
+                    "city": "Somewhere",
+                    "state": "CA",
+                    "zip": "95814"
+                },
+                {
+                    "id": 2,
+                    "meeting_kind": "Neighborhood Association",
+                    "format": "In-Person",
+                    "frequency_1": "Weekly",
+                    "frequency_2": "First",
+                    "frequency_3": "Monday",
+                    "open_to_public": false,
+                    "elections_held": "true",
+                    "start_time": "2000-01-01T14:00:00.000Z",
+                    "address": "1234 main ave",
+                    "city": "Somewhere",
+                    "state": "CA",
+                    "zip": "95814"
+                }
+            ]
+        }
+
   var currentTab = 0; // Current tab is set to be the first tab (0)
   showTab(currentTab); // Display the current tab
 
   function organizationChoose(event){
     document.getElementById("organizationName").value= event.target.value;
 
+    //turn this into API call that uses neighborhood id
     let neighborhoodData = neighborhoods.filter( (neighborhood) => neighborhood.name == event.target.value );
 
+    //input street data
     if(neighborhoodData){
       neighborhoodData[0] = {
         name: neighborhoodData[0].name,
@@ -1028,6 +1125,60 @@ input[type="radio"] {
       document.getElementById("streetAddress").value = neighborhoodData[0].street;
       document.getElementById("zipCode").value = neighborhoodData[0].zip;
     }
+
+    //input meeting data
+    chosenNeighborhood.meetings.forEach( (meeting, index) => {
+      let meetingCount = index;
+      const meetings = document.getElementsByClassName("meeting");
+
+      var meetingClone = meetings[0].cloneNode(true);
+      meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone);
+
+      console.log(meeting)
+
+      document.querySelectorAll("#meeting_type")[meetingCount].setAttribute("id", "meeting_type" + meetingCount);
+      document.getElementById("meeting_type" + meetingCount).value = meeting.meeting_kind;
+
+      document.querySelectorAll("#format")[meetingCount].setAttribute("id", "format" + meetingCount);
+      document.getElementById("format" + meetingCount).value = meeting.format;
+
+      document.querySelectorAll("#frq1")[meetingCount].setAttribute("id", "frq1_" + meetingCount);
+      document.getElementById("frq1_" + meetingCount).value = meeting.frequency_1;
+
+      document.querySelectorAll("#frq2")[meetingCount].setAttribute("id", "frq2_" + meetingCount);
+      document.getElementById("frq2_" + meetingCount).value = meeting.frequency_2;
+
+      document.querySelectorAll("#frq3")[meetingCount].setAttribute("id", "frq3_" + meetingCount);
+      document.getElementById("frq3_" + meetingCount).value = meeting.frequency_3;
+
+      document.querySelectorAll("#public")[meetingCount].setAttribute("id", "public" + meetingCount);
+      document.getElementById("public" + meetingCount).value = meeting.open_to_public === false? "No":"Yes";
+
+      document.querySelectorAll("#elections")[meetingCount].setAttribute("id", "elections" + meetingCount);
+      document.getElementById("elections" + meetingCount).value = meeting.elections_held === false? "No": "Yes";
+
+      document.querySelectorAll("#meeting_time")[meetingCount].setAttribute("id", "meeting_time" + meetingCount);
+      //document.getElementById("meeting_time" + meetingCount).value = meeting.;
+
+      document.querySelectorAll("#meeting_ampm")[meetingCount].setAttribute("id", "meeting_ampm" + meetingCount);
+      //document.getElementById("meeting_ampm" + meetingCount).value = meeting.;
+
+      document.querySelectorAll("#meeting_address")[meetingCount].setAttribute("id", "meeting_address" + meetingCount);
+      document.getElementById("meeting_address" + meetingCount).value = meeting.address
+
+      document.querySelectorAll("#meeting_state")[meetingCount].setAttribute("id", "meeting_state" + meetingCount);
+      document.getElementById("meeting_state" + meetingCount).value = meeting.state;
+
+      document.querySelectorAll("#meeting_city")[meetingCount].setAttribute("id", "meeting_city" + meetingCount);
+      document.getElementById("meeting_city" + meetingCount).value = meeting.city;
+
+      document.querySelectorAll("#meeting_zip")[meetingCount].setAttribute("id", "meeting_zip" + meetingCount);
+      document.getElementById("meeting_zip" + meetingCount).value = meeting.zip;
+
+      meetingCount += 1;
+    })
+
+
   }
 
   function addMeeting() {
@@ -1036,7 +1187,7 @@ input[type="radio"] {
     const meetings = document.getElementsByClassName("meeting");
 
     const meetingClone = meetings[meetings.length - 1].cloneNode(true)
-    meetingClone.insertAdjacentElement('afterend', meetingClone)
+    meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone)
 
   }
 
