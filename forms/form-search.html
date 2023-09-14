@@ -236,7 +236,17 @@
                 <div class="col-lg-3">
                   <div class="d-inline-block myp-2 p2-xtra">
                   <select name="council-district" id="council-district" style="width:82px;">
-                <option value="">None</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
                   </select>
                   </div>
                 </div>
@@ -245,19 +255,13 @@
                 <div class="col-lg-3">Organization type</div>
                 <div class="col-lg-5">
                   <div class="d-inline-block myp-2 p2-xtra">
-                <select name="0rganization-type" id="organization-type" style="width:220px;">
-                <option value="">None</option>
-                </select>
-                </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-3">Report type</div>
-                <div class="col-lg-5">
-                  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="report-type" id="report-type" style="width:220px;">
-                <option value="">None</option>
-                </select>
+                    <select name="0rganization-type" id="organization-type" style="width:220px;">
+                      <option value="Homes Association, Homeowners Association, Property Owners Association">Homes Association, Homeowners Association, Property Owners Association</option>
+                      <option value="Neighborhood Association">Neighborhood Association</option>
+                      <option value="Umbrella Organization">Umbrella Organization</option>
+                      <option value="Partner Organization">Partner Organization</option>
+                      <option value="Other">Other</option>
+                    </select>
                 </div>
                 </div>
               </div>
@@ -295,7 +299,6 @@
             
             <!-- Circles which indicates the steps of the form: -->
             <div style="text-align:center;margin-top:40px;">
-              <span class="step"></span>
               <span class="step"></span>
               <span class="step"></span>
             </div>
@@ -355,7 +358,7 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n == 2) {
+  if (n == 1) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Continue <i class='fas fa-arrow-right	 pr-2' aria-hidden='true'></i>";
@@ -412,7 +415,7 @@ function fixStepIndicator(n) {
     x[i].className = x[i].className.replace(" active", "");
   }
   //... and adds the "active" class to the current step:
-  x[n].className += " active";
+  x[n].className += " finish";
 }
 
   window.addEventListener("load", (event) => {
