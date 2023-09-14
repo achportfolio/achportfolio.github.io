@@ -208,7 +208,7 @@
       }
 
       .post-fun > * {
-        margin: 1rem 0rem;
+        margin: 1rem 0rem!important;
       }
 
     }
@@ -341,7 +341,7 @@ input[type="radio"] {
     }
 
     .post-fun > * {
-      margin: 0 1rem;
+      margin: 0rem 1rem;
     }
 
     .meeting {
