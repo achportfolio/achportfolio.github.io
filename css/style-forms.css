@@ -335,6 +335,14 @@ input[type="radio"] {
       display: none;
     }
 
+    .flex {
+      display: flex;
+    }
+
+    .items-spaced > * {
+      margin: 0 1rem 0 0 !important;
+    }
+
     .post-fun {
       display: flex;
       align-items: center;
