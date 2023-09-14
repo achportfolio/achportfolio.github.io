@@ -2,376 +2,6 @@
 <html lang="en">
 
 <head>
-  <style>
-
-
-	@media screen and (max-width: 600px) {
-		input {width:100% !important;}
-		select {width:100% !important;}
-		.p2-xtra{
-		padding-left:0px !important;
-		}
-		.p1-xtra{
-		width:100% !important;
-		}
-		.col-xtra{
-		width:100% !important;
-		}
-		.myalign{
-		text-align:left;
-		}
-		
-		.navbar.fixed-top .navbar-collapse,
-		.navbar.sticky-top .navbar-collapse {
-		overflow-y: auto;
-		max-height: 90vh;
-		margin-top: 10px;
-		}	
-		.txtemail{
-		.width: 100%;
-		}
-		input[type="radio"]{
-		width:20px !important;
-		}
-		.myp-2 {
-		padding: 0.5rem!important;
-		padding-left: 0px !important;
-		}
-
-	}
-	
-	@media only screen and (min-width: 1200px) {
-		.myp-2 {
-		padding: 0.5rem!important;
-}
-		input[type="radio"]{
-		width:20px !important;
-		}
-	.txtemail{
-		.width: 579px;
-		}
-	.post-fun{
-	left: 27%;
-	margin-top:53px; 
-	position:absolute;
-	}
-	.myalign{
-	text-align:right;
-	}
-	.navbar .has-megamenu {
-	position: relative !important;
-	}
-
-	.navbar .megamenu {
-	left: 0;
-	right: 0;
-	width: 100%;
-	margin-top: 0;
-	}
-
-
-	}
-
-	body{
-		color:#000000 !important;
-		font-family:Mulish;
-	}
-	ul, li {
-    margin: 0;
-    padding: 0px 10px !important;
-    list-style: none;
-	}
-
-  .site-navigation .navbar-nav a, .trans-navigation .navbar-nav a {
-    text-transform: capitalize !important;
-}
-    label{color:#000;}
-    .hover-white:hover {
-      background-color: white;
-    }
-
-    .navbar-brand img {
-      max-width: 35% !important;
-    }
-
-    .banner-area .content-padding {
-      padding: 150px 0px 100px !important;
-    }
-
-    .banner-2 {
-      margin-top: -117px;
-
-      background: url(images/icon/banner.png) !important;
-      background-size: cover !important;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-    .justify-content-end {
-
-      justify-content: flex-start !important;
-    }
-
-    .trans-navigation {
-        background: #0084CA !important;
-        padding: 20px 15px;
-      }
-
-    .service-box {
-      margin-bottom: 25px !important;
-      background: #fff;
-      text-align: left !important;
-      padding: 20px 25px 20px 25px !important;
-    }
-
-    .btn-style {
-      background-color: #F9423A !important;
-      color: white !important;
-      font: 700 !important;
-      font-size: 1rem !important;
-      line-height: 1.75rem !important;
-      padding-top: 0.75rem !important;
-      padding-bottom: 0.75rem !important;
-      padding-left: 1.5rem !important;
-      padding-right: 1.5rem !important;
-      --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
-      --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
-      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-      border-radius: 7px !important;
-    }
-
-    .bg-feature {
-      background-color: #ffffff !important;
-    }
-
-    .header-white {
-      position: inherit !important;
-    }
-
-    .fixed-top {
-
-      position: inherit !important;
-    }
-
-    .trans-navigation.header-white {
-      background: #1110 !important;
-    }
-
-    .cards-margin {
-      margin: 25px 0px 25px 0px;
-      height: 270px;
-    }
-
-
-    @media only screen and (min-width: 600px) {
-      img.d-inline-block.pad {
-        margin-left: 87px;
-      }
-    }
-
-    @media (max-width: 575.98px) {
-      .trans-navigation {
-        background: #4d7c0f !important;
-        padding: 20px 15px;
-      }
-    }
-
-    .service-box:hover {
-      border-color: #d6d6d6;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .navbar-expand-lg.trans-navigation .navbar-nav .nav-link,
-    .navbar-expand-lg.site-navigation .navbar-nav .nav-link {
-      padding: 0px 8px !important;
-      color:#ffffff;
-    }
-
-    .navbar .megamenu {
-      padding: 1rem;
-    }
-
-    .dropdown-menu.megamenu {
-      width: 700px;
-    }
-
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-      min-width: 700px;
-    }
-
-    /* ============ desktop view ============ */
-    @media all and (min-width: 992px) {
-	
-
-    }
-
-    /* ============ desktop view .end// ============ */
-
-
-    /* ============ mobile view ============ */
-    @media(max-width: 991px) {
-
-      .post-fun {
-        flex-direction: column;
-      }
-
-      .post-fun > * {
-        margin: 1rem 0rem;
-      }
-
-    }
-
-    /* ============ mobile view .end// ============ */
-
-    /* Style the form */
-#regForm {
-  background-color: #ffffff;
-  margin: 15px auto;
-  padding: 40px;
-  width: 85%;
-  min-width: 300px;
-}
-
-/* Style the input fields */
-input, select {
-  padding: 10px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-}
-
-input {
-  padding: 10px;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-
-}
-
-/* Hide all steps by default: */
-.tab {
-  display: none;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #04AA6D;
-}
-
-button, input, optgroup, select, textarea {   
-   border-radius: 9px; 
-}
-
-
-input {  
-   border: 1px solid #dfdddd;
-}
-
-.radio-button input[type="radio"] {
-  display: none;
-}
-input[type="radio"] {
-        width:20px;
-      }      
-      .radio-button label {
-        display: inline-block;
-        padding: 10px 11px;
-        margin: 10px 0px;
-        font-family: Arial;
-        font-size: 18px;
-        cursor: pointer;
-        border: 1px solid #0084ca;
-        border-radius: 9px; 
-      }      
-      .radio-button input[type="radio"]:checked+label {
-        background-color: #76cf9f;
-      }
-	  .col-xtra{
-	  width:12.666667% !important;
-	  }
-	  .navbar-nav{
-	  font-family:Mulish;
-	  font-size:20px;
-	  }
-	  .navbar-expand-lg.trans-navigation .navbar-nav .nav-link:hover{
-	  color:red;
-	  }
-	  ::placeholder {
-		color: black;
-	  }
-	  input {border: 1px solid #AAAAAA;}
-	  .btn-style {
-		background-color: #0084CA !important;
-		}
-		.trans-navigation {
-        background: #0084CA !important;
-        padding: 20px 15px;
-      }
-
-    .column {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .post-fun {
-      display: flex;
-      align-items: center;
-    }
-
-    .post-fun > * {
-      margin: 0 1rem;
-    }
-
-    .meetingCount {
-      display: flex;
-      background: #0084ca;
-      color: #ffffff;
-      padding: 0.81rem 1.5rem;
-      border-radius: 5px;
-    }
-
-    .meetingCount > p {
-      margin: 0;
-      line-height: 1.7rem;
-    }
-
-    .popUp {
-      display: none;
-      position: absolute;
-      left: 31%;
-      top:37%;
-      width: 35%;
-      height: 30%;
-      background-color: #ddddddeb;
-    }
-
-    .showPopUp {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-  </style>
 
   <!-- ** Basic Page Needs ** -->
   <meta charset="utf-8">
@@ -396,7 +26,8 @@ input[type="radio"] {
   <link rel="stylesheet" href="plugins/icofont/icofont.css">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-forms.css">
 
   <!--Favicon-->
   <link rel="icon" href="#" type="image/x-icon">
@@ -812,7 +443,7 @@ input[type="radio"] {
 
             <div class="post-fun">
             <div class="meetingCount">
-              <p>Meetings: 1</p>
+              <p id="meetingCount">Meetings: 1</p>
             </div>
             <button type="button" class="btn-style btn" onclick="showPopUp('addMeetingPopUp')">+ ADD MEETING</button>
             <button type="button" class="btn-style btn" onclick="showPopUp('deleteMeetingPopUp')" >- DELETE MEETING</button>
@@ -824,60 +455,83 @@ input[type="radio"] {
             <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
               Who are the contacts and/or officers for the organization?
             </h1>
-        	<div class="row">
-            <div class="col-lg-3">Contact Name</div>
-            <div class="col-lg-9">
-              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="First" size="15"></div>
-              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Middle" size="15"></div>
-              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Last" size="15"></div>
+            <div class="column contact">
+            	<div class="row">
+                <div class="col-lg-3">Contact Name</div>
+                <div class="col-lg-9">
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="First" id="contact_first_name" size="15">
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="Middle" size="15" id="contact_middle_name">
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="Last" size="15" id="contact_last_name">
+                  </div>
+                </div>
+                <div class="col-lg-3">Title</div>
+                <div class="col-lg-4">
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <select name="title" id="contact_title" style="width: 562px;">
+                    <option value="">Block Watch/Public Safety</option>
+                    <option value="">Board Member</option>
+                    <option value="">Communications (Web, Social Media, Newsletter)</option>
+                    <option value="">Contact Person</option>
+                    <option value="">Director</option>
+                    <option value="">Events</option>
+                    <option value="">Executive Director</option>
+                    <option value="">Office Manager</option>
+                    <option value="">Parliamentarian</option>
+                    <option value="">President</option>
+                    <option value="">Property Manager</option>
+                    <option value="">Secretary</option>
+                    <option value="">Treasurer</option>
+                    <option value="">Vice President</option>
+                    <option value="">Volunteer Coordinator</option>
+                    <option value="">Youth Director</option>
+                    </select>
+            	  </div>
+            	  <div class="d-inline-block myp-2 p2-xtra txtemail">
+                  <input placeholder="Email Address" size="100" id="contact_email">
+                </div>
+            	  </div>
+              <div style="clear: both;"></div>
+            	<div class="col-lg-3">Primary Contact</div>
+                <div class="col-lg-9">
+            		<div class="d-inline-block myp-2 p2-xtra">
+            		<select name="primary-contact" id="contact_primary-contact">
+                    <option value="">Yes</option>
+                    <option value="">No</option>
+                  </select>
+            	  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input placeholder="Phone" id="contact_phone" style="width: 280px;">
+                  </div>
+                </div>
+            	<div class="col-lg-3">Mailing Address</div>
+                <div class="col-lg-7">
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input size="15" id="contact_street" placeholder="Street OR PO Box" >
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input size="15" id="contact_city" placeholder="City" >
+                  </div>
+            	  <div class="d-inline-block myp-2 p2-xtra">
+                  
+                </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input size="15" id="contact_state" placeholder="State" >
+                  </div>
+                  <div class="d-inline-block myp-2 p2-xtra">
+                    <input size="5" id="contact_zip" placeholder="Zip Code" >
+                  </div>
+                </div>
+                </div>
             </div>
-            <div class="col-lg-3">Title</div>
-            <div class="col-lg-4">
-              <div class="d-inline-block myp-2 p2-xtra">
-                <select name="title" id="title" style="width: 562px;">
-                <option value="">Block Watch/Public Safety</option>
-                <option value="">Board Member</option>
-                <option value="">Communications (Web, Social Media, Newsletter)</option>
-                <option value="">Contact Person</option>
-                <option value="">Director</option>
-                <option value="">Events</option>
-                <option value="">Executive Director</option>
-                <option value="">Office Manager</option>
-                <option value="">Parliamentarian</option>
-                <option value="">President</option>
-                <option value="">Property Manager</option>
-                <option value="">Secretary</option>
-                <option value="">Treasurer</option>
-                <option value="">Vice President</option>
-                <option value="">Volunteer Coordinator</option>
-                <option value="">Youth Director</option>
-                </select>
-        	  </div>
-        	  <div class="d-inline-block myp-2 p2-xtra txtemail"><input placeholder="Email Address" size="100"></div>
-        	  </div>
-          <div style="clear: both;"></div>
-        	<div class="col-lg-3">Primary Contact</div>
-            <div class="col-lg-9">
-        		<div class="d-inline-block myp-2 p2-xtra">
-        		<select name="primary-contact" id="primary-contact">
-                <option value="">Yes</option>
-                <option value="">No</option>
-              </select>
-        	  </div>
-              <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Phone" style="width: 280px;"></div>
-            </div>
-        	<div class="col-lg-3">Mailing Address</div>
-            <div class="col-lg-7">
-              <div class="d-inline-block myp-2 p2-xtra"><input size="15" placeholder="Street OR PO Box" ></div>
-              <div class="d-inline-block myp-2 p2-xtra"><input size="15" placeholder="City" ></div>
-        	  <div class="d-inline-block myp-2 p2-xtra"></div>
-              <div class="d-inline-block myp-2 p2-xtra"><input size="15" placeholder="State" ></div>
-              <div class="d-inline-block myp-2 p2-xtra"><input size="5" placeholder="Zip Code" ></div>
-            </div>
-            </div>
+
             <div class="post-fun" >
               <div class="meetingCount">
-                <p>Contacts: 1</p>
+                <p id="contactsCount">Contacts: 1</p>
               </div>
               <button type="button" class="btn-style btn" >+ ADD CONTACT</button>
               <button type="button" class="btn-style btn" onclick="showPopUp('deleteContactPopUp')" >- DELETE CONTACT</button>
@@ -1041,10 +695,11 @@ input[type="radio"] {
                     "first_name": "Chewy",
                     "middle_name": null,
                     "last_name": "Baca",
-                    "title": "Chewbacka Properties Limited",
+                    "title": "Contact Person",
                     "email": "chewy@solo.com",
                     "primary": false,
                     "phone": "3331233214",
+                    "city": "Somewhere",
                     "address": "115",
                     "street": "31ST St",
                     "suite_number": "",
@@ -1056,10 +711,11 @@ input[type="radio"] {
                     "first_name": "Hans",
                     "middle_name": null,
                     "last_name": "Solo",
-                    "title": "Scoundral",
+                    "title": "Contact Person",
                     "email": "han@solo.com",
                     "primary": false,
                     "phone": "1233211234",
+                    "city": "Somewhere",
                     "address": "115",
                     "street": "31ST St",
                     "suite_number": "",
@@ -1104,7 +760,30 @@ input[type="radio"] {
   var currentTab = 0; // Current tab is set to be the first tab (0)
   showTab(currentTab); // Display the current tab
 
-  function organizationChoose(event){
+  async function organizationChoose(event) {
+    
+    let neighborhoodDataFilter = neighborhoods.filter( (neighborhood) => neighborhood.name == event.target.value )[0];
+
+    //only run the function if neighborhood matches DB
+    if(!neighborhoodDataFilter) {
+      return false
+    }
+
+
+    const response = await fetch('https://app.pbidmanager.com/api/v1/neighborhood_associations/association_details?district_id=241&association_id=' + neighborhoodDataFilter.id, {
+      headers: {
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    })
+    const neighborhoodData = await response.json()
+    console.log(neighborhoodData)
+
+    //sessionStorage.neighborhoodChosen = JSON.stringify(neighborhoodData.data.neighborhood_associations)
+    loadNeighborhoodData(event)
+  }
+
+  function loadNeighborhoodData(event){
     document.getElementById("organizationName").value= event.target.value;
 
     //turn this into API call that uses neighborhood id
@@ -1126,58 +805,118 @@ input[type="radio"] {
       document.getElementById("zipCode").value = neighborhoodData[0].zip;
     }
 
+    //hide meeting cloned item
+    document.querySelector(".meeting").classList.toggle("displayNone");
     //input meeting data
     chosenNeighborhood.meetings.forEach( (meeting, index) => {
       let meetingCount = index;
       const meetings = document.getElementsByClassName("meeting");
 
       var meetingClone = meetings[0].cloneNode(true);
+      meetingClone.classList.toggle("displayNone");
       meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone);
 
       console.log(meeting)
 
-      document.querySelectorAll("#meeting_type")[meetingCount].setAttribute("id", "meeting_type" + meetingCount);
+      document.querySelectorAll("#meeting_type")[1].setAttribute("id", "meeting_type" + meetingCount);
       document.getElementById("meeting_type" + meetingCount).value = meeting.meeting_kind;
 
-      document.querySelectorAll("#format")[meetingCount].setAttribute("id", "format" + meetingCount);
+      document.querySelectorAll("#format")[1].setAttribute("id", "format" + meetingCount);
       document.getElementById("format" + meetingCount).value = meeting.format;
 
-      document.querySelectorAll("#frq1")[meetingCount].setAttribute("id", "frq1_" + meetingCount);
+      document.querySelectorAll("#frq1")[1].setAttribute("id", "frq1_" + meetingCount);
       document.getElementById("frq1_" + meetingCount).value = meeting.frequency_1;
 
-      document.querySelectorAll("#frq2")[meetingCount].setAttribute("id", "frq2_" + meetingCount);
+      document.querySelectorAll("#frq2")[1].setAttribute("id", "frq2_" + meetingCount);
       document.getElementById("frq2_" + meetingCount).value = meeting.frequency_2;
 
-      document.querySelectorAll("#frq3")[meetingCount].setAttribute("id", "frq3_" + meetingCount);
+      document.querySelectorAll("#frq3")[1].setAttribute("id", "frq3_" + meetingCount);
       document.getElementById("frq3_" + meetingCount).value = meeting.frequency_3;
 
-      document.querySelectorAll("#public")[meetingCount].setAttribute("id", "public" + meetingCount);
-      document.getElementById("public" + meetingCount).value = meeting.open_to_public === false? "No":"Yes";
+      document.querySelectorAll("#public")[1].setAttribute("id", "public" + meetingCount);
+      document.getElementById("public" + meetingCount).value = meeting.open_to_public  === false? "No":"Yes";
+      console.log(document.getElementById("public" + meetingCount))
+      console.log(meeting.open_to_public)
+      console.log(meeting.open_to_public === false? "No":"Yes")
 
-      document.querySelectorAll("#elections")[meetingCount].setAttribute("id", "elections" + meetingCount);
+      document.querySelectorAll("#elections")[1].setAttribute("id", "elections" + meetingCount);
       document.getElementById("elections" + meetingCount).value = meeting.elections_held === false? "No": "Yes";
 
-      document.querySelectorAll("#meeting_time")[meetingCount].setAttribute("id", "meeting_time" + meetingCount);
-      //document.getElementById("meeting_time" + meetingCount).value = meeting.;
+      document.querySelectorAll("#meeting_time")[1].setAttribute("id", "meeting_time" + meetingCount);
+      let startHour = parseInt(meeting.start_time.slice(11, 13));
+      console.log(startHour)
+      let startMinute = meeting.start_time.slice(14, 16)
+      if(startHour > 12){ startHour = startHour - 12}
+      document.getElementById("meeting_time" + meetingCount).value = startHour + ":" + startMinute;
 
-      document.querySelectorAll("#meeting_ampm")[meetingCount].setAttribute("id", "meeting_ampm" + meetingCount);
-      //document.getElementById("meeting_ampm" + meetingCount).value = meeting.;
+      document.querySelectorAll("#meeting_ampm")[1].setAttribute("id", "meeting_ampm" + meetingCount);
+      let ampm = parseInt(meeting.start_time.slice(11, 13))
+      document.getElementById("meeting_ampm" + meetingCount).value = ampm > 11 ? "PM" : "AM";
+      //"start_time": "2000-01-01T18:00:00.000Z",
 
-      document.querySelectorAll("#meeting_address")[meetingCount].setAttribute("id", "meeting_address" + meetingCount);
+      document.querySelectorAll("#meeting_address")[1].setAttribute("id", "meeting_address" + meetingCount);
       document.getElementById("meeting_address" + meetingCount).value = meeting.address
 
-      document.querySelectorAll("#meeting_state")[meetingCount].setAttribute("id", "meeting_state" + meetingCount);
+      document.querySelectorAll("#meeting_state")[1].setAttribute("id", "meeting_state" + meetingCount);
       document.getElementById("meeting_state" + meetingCount).value = meeting.state;
 
-      document.querySelectorAll("#meeting_city")[meetingCount].setAttribute("id", "meeting_city" + meetingCount);
+      document.querySelectorAll("#meeting_city")[1].setAttribute("id", "meeting_city" + meetingCount);
       document.getElementById("meeting_city" + meetingCount).value = meeting.city;
 
-      document.querySelectorAll("#meeting_zip")[meetingCount].setAttribute("id", "meeting_zip" + meetingCount);
+      document.querySelectorAll("#meeting_zip")[1].setAttribute("id", "meeting_zip" + meetingCount);
       document.getElementById("meeting_zip" + meetingCount).value = meeting.zip;
-
-      meetingCount += 1;
     })
 
+    //add the meeting count to the meetings button
+    document.getElementById("meetingCount").innerHTML= chosenNeighborhood.meetings.length < 6 ? "Meetings: " + chosenNeighborhood.meetings.length : "Meetings: 5+";
+
+
+    //hide contact cloned item
+    document.querySelector(".contact").classList.toggle("displayNone");
+    //input meeting data
+    chosenNeighborhood.contacts.forEach( (contact, index) => {
+      let contactCount = index;
+      const contacts = document.getElementsByClassName("contact");
+
+      var contactClone = contacts[0].cloneNode(true);
+      contactClone.classList.toggle("displayNone");
+      contacts[contacts.length - 1].insertAdjacentElement('afterend', contactClone);
+
+      console.log(contact)
+
+      document.querySelectorAll("#contact_first_name")[1].setAttribute("id", "contact_first_name" + contactCount);
+      document.getElementById("contact_first_name" + contactCount).value = contact.first_name;
+
+      document.querySelectorAll("#contact_middle_name")[1].setAttribute("id", "contact_middle_name" + contactCount);
+      document.getElementById("contact_middle_name" + contactCount).value = contact.middle_name;
+
+      document.querySelectorAll("#contact_last_name")[1].setAttribute("id", "contact_last_name" + contactCount);
+      document.getElementById("contact_last_name" + contactCount).value = contact.last_name;
+
+      document.querySelectorAll("#contact_title")[1].setAttribute("id", "contact_title" + contactCount);
+      document.getElementById("contact_title" + contactCount).value = contact.title;
+
+      document.querySelectorAll("#contact_primary-contact")[1].setAttribute("id", "contact_primary-contact" + contactCount);
+      document.getElementById("contact_primary-contact" + contactCount).value = contact.primary === false? "No":"Yes";
+
+      document.querySelectorAll("#contact_phone")[1].setAttribute("id", "contact_phone" + contactCount);
+      document.getElementById("contact_phone" + contactCount).value = contact.phone;
+
+      document.querySelectorAll("#contact_street")[1].setAttribute("id", "contact_street" + contactCount);
+      document.getElementById("contact_street" + contactCount).value = contact.street;
+
+      document.querySelectorAll("#contact_city")[1].setAttribute("id", "contact_city" + contactCount);
+      document.getElementById("contact_city" + contactCount).value = contact.city;
+
+      document.querySelectorAll("#contact_state")[1].setAttribute("id", "contact_state" + contactCount);
+      document.getElementById("contact_state" + contactCount).value = contact.state;
+
+      document.querySelectorAll("#contact_zip")[1].setAttribute("id", "contact_zip" + contactCount);
+      document.getElementById("contact_zip" + contactCount).value = contact.zip
+    })
+
+    //add the meeting count to the meetings button
+    document.getElementById("contactsCount").innerHTML= chosenNeighborhood.contacts.length < 6 ? "Contacts: " + chosenNeighborhood.contacts.length : "Contacts: 5+";
 
   }
 
@@ -1187,6 +926,9 @@ input[type="radio"] {
     const meetings = document.getElementsByClassName("meeting");
 
     const meetingClone = meetings[meetings.length - 1].cloneNode(true)
+    if(meetings[0].classList.contains("displayNone")){
+      meetingClone.classList.toggle("displayNone")
+    }
     meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone)
 
   }
