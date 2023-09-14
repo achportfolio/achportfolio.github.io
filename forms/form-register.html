@@ -442,9 +442,9 @@
             </div>
 
             <div class="post-fun">
-            <div class="meetingCount">
+            <button class="meetingCount btn-style btn">
               <p id="meetingCount">Meetings: 1</p>
-            </div>
+            </button>
             <button type="button" class="btn-style btn" onclick="showPopUp('addMeetingPopUp')">+ ADD MEETING</button>
             <button type="button" class="btn-style btn" onclick="showPopUp('deleteMeetingPopUp')" >- DELETE MEETING</button>
             </div>
@@ -530,9 +530,9 @@
             </div>
 
             <div class="post-fun" >
-              <div class="meetingCount">
+              <button class="meetingCount btn-style btn">
                 <p id="contactsCount">Contacts: 1</p>
-              </div>
+              </button>
               <button type="button" class="btn-style btn" >+ ADD CONTACT</button>
               <button type="button" class="btn-style btn" onclick="showPopUp('deleteContactPopUp')" >- DELETE CONTACT</button>
               </div>
@@ -767,7 +767,7 @@
     //only run the function if neighborhood matches DB
     if(!neighborhoodDataFilter) {
       return false
-    }
+  }
 
 
     const response = await fetch('https://app.pbidmanager.com/api/v1/neighborhood_associations/association_details?district_id=241&association_id=' + neighborhoodDataFilter.id, {
