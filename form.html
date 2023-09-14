@@ -630,9 +630,14 @@
     elementChosen.classList.toggle("selectedButton");
     
     //selectedService = serviceName;
-    if(serviceName === "search" || serviceName === "mailing"){
+    if(serviceName === "search"){
       document.getElementById("nextBtn").setAttribute("href", "./forms/form-search.html")
     }
+
+    if(serviceName === "mailing"){
+      document.getElementById("nextBtn").setAttribute("href", "./forms/form-mailing_list.html")
+    }
+
     if(serviceName === "renew" || serviceName === "register"){
       document.getElementById("nextBtn").setAttribute("href", "./forms/form-register.html")
     }
