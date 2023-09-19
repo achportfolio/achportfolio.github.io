@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
   <!-- Icofont -->
   <link rel="stylesheet" href="plugins/icofont/icofont.css">
+  <!-- Mulish -->
+  <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
@@ -322,109 +324,140 @@
 
           </div>
           <div class="tab">
-            <div class="column meeting">
+            <div class="column meeting" id="meeting">
               <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
                 Neighborhood organization meeting information
               </h1>
-              <div class="row">
-                <div class="col-lg-2 col-xtra"><span>Meeting Type: </span></div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="meeting_type" id="meeting_type" style="width:166px;">
-                  <option value="General meeting">General meeting</option>
-                  <option value="Annual meeting">Annual meeting</option>
-                  <option value="Board meeting">Board meeting</option>
-                  <option value="Public safety meeting">Public Safety meeting</option>
-                  <option value="Social event">Social event (if recurring)</option>
-                  <option value="Neighborhood clean-up">Neighborhood clean-up (if recurring)</option>
-                  <option value="Neighborhood Association">Neighborhood Association</option>
-                </select>
-          	  </div>
+              <img src="../images/icon/trash.svg" class="absoluteRight icon" onclick="showPopUp('deleteMeetingPopUp', this)">
+              
+              <div class="flex full spaceBetween meetingDataRow">
+                
+                <div class="column" style="width: 40%;">
+                  <div class="flex spaceAround">
+                    <div class=""><span>Meeting Type: </span></div>
+                    <div class="">
+                  	  <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="meeting_type" id="meeting_type" style="width:100%;">
+                          <option value="General meeting">General meeting</option>
+                          <option value="Annual meeting">Annual meeting</option>
+                          <option value="Board meeting">Board meeting</option>
+                          <option value="Public safety meeting">Public Safety meeting</option>
+                          <option value="Social event">Social event (if recurring)</option>
+                          <option value="Neighborhood clean-up">Neighborhood clean-up (if recurring)</option>
+                          <option value="Neighborhood Association">Neighborhood Association</option>
+                        </select>
+                  	  </div>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div class="" style="width: 93px;">
+                      <span>Format: </span>
+                    </div>
+                    <div class="">
+                      <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="format" id="format" style="width:166px;">
+                          <option value="In-Person">In-person</option>
+                          <option value="Virtual">Virtual</option>
+                          <option value="Other Contact">Other contact</option>
+                          <option value="Orginization">organization</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-2 myalign"><span>Frequency 1: </span></div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="frq1" id="frq1" style="width:110px;">
-                  <option value="Monthly">Monthly</option>
-                  <option value="Even Months">Even months</option>
-                  <option value="Odd Months">Odd months</option>
-                  <option value="Weekly">Weekly</option>
-                  <option value="Quarterly">Quarterly</option>
-                  <option value="Annually">Annually</option>
-                  <option value="Other Contact">Other contact</option>
-                </select>
-          	  </div>
+
+
+                <div class="column" style="width: 26%;">
+                  <div class="flex spaceAround">
+                    <div class="myalign"><span>Frequency 1: </span></div>
+                    <div class="">
+                  	  <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="frq1" id="frq1" style="width:110px;">
+                          <option value="Monthly">Monthly</option>
+                          <option value="Even Months">Even months</option>
+                          <option value="Odd Months">Odd months</option>
+                          <option value="Weekly">Weekly</option>
+                          <option value="Quarterly">Quarterly</option>
+                          <option value="Annually">Annually</option>
+                          <option value="Other Contact">Other contact</option>
+                        </select>
+                  	  </div>
+                    </div>
+                  </div>
+                  <div class="flex spaceAround">
+                    <div class="myalign"><span>Frequency 2: </span></div>
+                    <div class="">
+                      <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="frq2" id="frq2" style="width:110px;">
+                          <option value="First">First</option>
+                          <option value="Second">Second</option>
+                          <option value="Third">Third</option>
+                          <option value="Fourth">Fourth</option>
+                          <option value="Every">Every</option>
+                          <option value="Last">Last</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex spaceAround">
+                    <div class="myalign"><span>Frequency 3: </span></div>
+                    <div class="">
+                      <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="frq3" id="frq3" style="width:110px;">
+                          <option value="Sunday">Sunday</option>
+                          <option value="Monday">Monday</option>
+                          <option value="Tuesday">Tuesday</option>
+                          <option value="Wednesday">Wednesday</option>
+                          <option value="Thursday">Thursday</option>
+                          <option value="Friday">Friday</option>
+                          <option value="Saturday">Saturday</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-2"><span>Open to the public?</span></div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="public" id="public" style="width:100px;">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-          	  </div>
-                </div>
-                <div class="col-lg-2 col-xtra">
-                <span>Format: </span>
-                </div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="format" id="format" style="width:166px;">
-                  <option value="In-Person">In-person</option>
-                  <option value="Virtual">Virtual</option>
-                  <option value="Other Contact">Other contact</option>
-                  <option value="Orginization">organization</option>
-                </select>
-          	  </div>
-                </div>
-                <div class="col-lg-2 myalign"><span>Frequency 2: </span></div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="frq2" id="frq2" style="width:110px;">
-                  <option value="First">First</option>
-                  <option value="Second">Second</option>
-                  <option value="Third">Third</option>
-                  <option value="Fourth">Fourth</option>
-                  <option value="Every">Every</option>
-                  <option value="Last">Last</option>
-                </select>
-          	  </div>
-                </div>
-                <div class="col-lg-2"><span>Are elections held?</span></div>
-                <div class="col-lg-2" >
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="elections" id="elections" style="width:100px;">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-          	  </div>
-                </div>
-                <div class="col-lg-2 col-xtra"></div>
-          	  <div class="col-lg-2"></div>
-                <div class="col-lg-2 myalign"><span>Frequency 3: </span></div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <select name="frq3" id="frq3" style="width:110px;">
-                  <option value="Sunday">Sunday</option>
-                  <option value="Monday">Monday</option>
-                  <option value="Tuesday">Tuesday</option>
-                  <option value="Wednesday">Wednesday</option>
-                  <option value="Thursday">Thursday</option>
-                  <option value="Friday">Friday</option>
-                  <option value="Saturday">Saturday</option>
-                </select>
-          	  </div>
-                </div>
-                <div class="col-lg-2">
-                <span>Start Time:</span>
-                </div>
-                <div class="col-lg-2">
-          	  <div class="d-inline-block myp-2 p2-xtra">
-                <input placeholder="0:00" id="meeting_time" style="width:100px;"><br />
-                <input placeholder="AM/PM" id="meeting_ampm" style="width:100px;">
-          	  </div>
+
+                <div class="column" style="width: 26%;">
+                  <div class="flex spaceBetween">
+                    <div class=""><span>Open to the public?</span></div>
+                    <div class="">
+                  	  <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="public" id="public" style="width:100px;">
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                  	  </div>
+                    </div>
+                  </div>
+                  
+                  <div class="flex spaceBetween">
+                    <div class=""><span>Are elections held?</span></div>
+                    <div class="" >
+                  	  <div class="d-inline-block myp-2 p2-xtra">
+                        <select name="elections" id="elections" style="width:100px;">
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                  	  </div>
+                    </div>
+                  </div>
+
+                  <div class="flex spaceBetween">
+                    <div class="">
+                      <span>Start Time:</span>
+                    </div>
+                    <div class="">
+                  	  <div class="d-inline-block myp-2 p2-xtra">
+                        <input placeholder="0:00" id="meeting_time" style="width:100px;"><br />
+                        <input placeholder="AM/PM" id="meeting_ampm" style="width:100px;">
+                  	  </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
+
+
               <div class="row">
                 <div class="col-lg-2" style="width:126px !important;">
                   Location
@@ -448,19 +481,19 @@
 
             <div class="post-fun">
             <button class="meetingCount btn-style btn">
-              <p id="meetingCount">Meetings: 1</p>
+              <p id="meetingCount">Meetings: </p><p id="meetingCountNumber">1</p>
             </button>
-            <button type="button" class="btn-style btn" onclick="showPopUp('addMeetingPopUp')">+ ADD MEETING</button>
-            <button type="button" class="btn-style btn" onclick="showPopUp('deleteMeetingPopUp')" >- DELETE MEETING</button>
+              <button type="button" class="btn-style btn" onclick="showPopUp('addMeetingPopUp')">+ ADD MEETING</button>
             </div>
           </div>
 
 
-           <div class="tab">
-            <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
-              Who are the contacts and/or officers for the organization?
-            </h1>
-            <div class="column contact">
+          <div class="tab">
+            <div class="column contact" id="contact">
+              <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
+                Who are the contacts and/or officers for the organization?
+              </h1>
+              <img src="../images/icon/trash.svg" class="absoluteRight icon" onclick="showPopUp('deleteContactPopUp', this)">
             	<div class="row">
                 <div class="col-lg-3">Contact Name</div>
                 <div class="col-lg-9">
@@ -539,7 +572,6 @@
                 <p id="contactsCount">Contacts: 1</p>
               </button>
               <button type="button" class="btn-style btn" >+ ADD CONTACT</button>
-              <button type="button" class="btn-style btn" onclick="showPopUp('deleteContactPopUp')" >- DELETE CONTACT</button>
               </div>
           </div>
 
@@ -610,94 +642,93 @@
   <!-- <script src="js/script.js"></script> -->
 <script>
   var neighborhoods = JSON.parse(sessionStorage.neighborhoods)
-  console.log(neighborhoods)
 
   var chosenNeighborhood = {
-            "name": "Flying Fig",
-            "id": 66332,
+    "name": "Flying Fig",
+    "id": 66332,
+    "address": "115",
+    "street": "31ST St",
+    "suite_number": "",
+    "city": "Lorton",
+    "state": "MO",
+    "zip": "10001",
+    "organization_type": "Homes Assc",
+    "status": "Active",
+    "website": null,
+    "email": null,
+    "facebook": null,
+    "instagram": null,
+    "twitter": null,
+    "nextdoor": null,
+    "newsletter": null,
+    "phone": null,
+    "contacts": [
+        {
+            "id": 91321,
+            "first_name": "Charles",
+            "middle_name": null,
+            "last_name": "Baca",
+            "title": "Contact Person",
+            "email": "charles@solo.com",
+            "primary": false,
+            "phone": "3331233214",
+            "city": "Logstead",
             "address": "115",
-            "street": "31ST St",
+            "street": "20ST St",
             "suite_number": "",
-            "city": "Lorton",
             "state": "MO",
-            "zip": "10001",
-            "organization_type": "Homes Assc",
-            "status": "Active",
-            "website": null,
-            "email": null,
-            "facebook": null,
-            "instagram": null,
-            "twitter": null,
-            "nextdoor": null,
-            "newsletter": null,
-            "phone": null,
-            "contacts": [
-                {
-                    "id": 91321,
-                    "first_name": "Charles",
-                    "middle_name": null,
-                    "last_name": "Baca",
-                    "title": "Contact Person",
-                    "email": "charles@solo.com",
-                    "primary": false,
-                    "phone": "3331233214",
-                    "city": "Logstead",
-                    "address": "115",
-                    "street": "20ST St",
-                    "suite_number": "",
-                    "state": "MO",
-                    "zip": "10001"
-                },
-                {
-                    "id": 91466,
-                    "first_name": "Hans",
-                    "middle_name": null,
-                    "last_name": "Sopp",
-                    "title": "Contact Person",
-                    "email": "hans@solo.com",
-                    "primary": false,
-                    "phone": "1233211234",
-                    "city": "Tellers",
-                    "address": "211",
-                    "street": "38ST St",
-                    "suite_number": "",
-                    "state": "MO",
-                    "zip": "10021"
-                }
-            ],
-            "meetings": [
-                {
-                    "id": 1,
-                    "meeting_kind": "Neighborhood Association",
-                    "format": "Virtual",
-                    "frequency_1": "Monthly",
-                    "frequency_2": "First",
-                    "frequency_3": "Saturday",
-                    "open_to_public": true,
-                    "elections_held": "false",
-                    "start_time": "2000-01-01T18:00:00.000Z",
-                    "address": "1234 main ave",
-                    "city": "Somewhere",
-                    "state": "CA",
-                    "zip": "95814"
-                },
-                {
-                    "id": 2,
-                    "meeting_kind": "Neighborhood Association",
-                    "format": "In-Person",
-                    "frequency_1": "Weekly",
-                    "frequency_2": "First",
-                    "frequency_3": "Monday",
-                    "open_to_public": false,
-                    "elections_held": "true",
-                    "start_time": "2000-01-01T14:00:00.000Z",
-                    "address": "1234 main ave",
-                    "city": "Somewhere",
-                    "state": "CA",
-                    "zip": "95814"
-                }
-            ]
+            "zip": "10001"
+        },
+        {
+            "id": 91466,
+            "first_name": "Hans",
+            "middle_name": null,
+            "last_name": "Sopp",
+            "title": "Contact Person",
+            "email": "hans@solo.com",
+            "primary": false,
+            "phone": "1233211234",
+            "city": "Tellers",
+            "address": "211",
+            "street": "38ST St",
+            "suite_number": "",
+            "state": "MO",
+            "zip": "10021"
         }
+    ],
+    "meetings": [
+        {
+            "id": 1,
+            "meeting_kind": "Neighborhood Association",
+            "format": "Virtual",
+            "frequency_1": "Monthly",
+            "frequency_2": "First",
+            "frequency_3": "Saturday",
+            "open_to_public": true,
+            "elections_held": "false",
+            "start_time": "2000-01-01T18:00:00.000Z",
+            "address": "1234 main ave",
+            "city": "Somewhere",
+            "state": "CA",
+            "zip": "95814"
+        },
+        {
+            "id": 2,
+            "meeting_kind": "Neighborhood Association",
+            "format": "In-Person",
+            "frequency_1": "Weekly",
+            "frequency_2": "First",
+            "frequency_3": "Monday",
+            "open_to_public": false,
+            "elections_held": "true",
+            "start_time": "2000-01-01T14:00:00.000Z",
+            "address": "1234 main ave",
+            "city": "Somewhere",
+            "state": "CA",
+            "zip": "95814"
+        }
+    ]
+  }
 
   var currentTab = 0; // Current tab is set to be the first tab (0)
   showTab(currentTab); // Display the current tab
@@ -720,6 +751,7 @@
     })
     const neighborhoodData = await response.json()
     console.log(neighborhoodData)
+    //chosenNeighborhood = neighborhoodData;
 
     //sessionStorage.neighborhoodChosen = JSON.stringify(neighborhoodData.data.neighborhood_associations)
     loadNeighborhoodData(event)
@@ -749,12 +781,15 @@
 
     //hide meeting cloned item
     document.querySelector(".meeting").classList.toggle("displayNone");
+    
     //input meeting data
     chosenNeighborhood.meetings.forEach( (meeting, index) => {
       let meetingCount = index;
       const meetings = document.getElementsByClassName("meeting");
 
       var meetingClone = meetings[0].cloneNode(true);
+      const legacyId = meetingClone.getAttribute("id");
+      meetingClone.setAttribute("id", legacyId + index);
       meetingClone.classList.toggle("displayNone");
       meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone);
 
@@ -810,7 +845,9 @@
     })
 
     //add the meeting count to the meetings button
-    document.getElementById("meetingCount").innerHTML= chosenNeighborhood.meetings.length < 6 ? "Meetings: " + chosenNeighborhood.meetings.length : "Meetings: 5+";
+    document.getElementById("meetingCount").innerHTML= "Meetings: ";
+
+    document.getElementById("meetingCountNumber").innerHTML= chosenNeighborhood.meetings.length < 6 ? chosenNeighborhood.meetings.length : "5+";
 
 
     //hide contact cloned item
@@ -868,6 +905,10 @@
     const meetings = document.getElementsByClassName("meeting");
 
     const meetingClone = meetings[meetings.length - 1].cloneNode(true)
+    
+    const legacyId = meetingClone.getAttribute("id");
+    meetingClone.setAttribute("id", legacyId + index);
+
     if(meetings[0].classList.contains("displayNone")){
       meetingClone.classList.toggle("displayNone")
     }
@@ -878,18 +919,42 @@
   function deleteMeeting() {
     closePopUp()
 
-    const meetings = document.getElementsByClassName("meeting");
+    const meetingToDelete = document.getElementById(sessionStorage.deleteId);
 
-    if( meetings[meetings.length - 1].remove() ) {
-      meetings[meetings.length - 1]
+    if( meetingToDelete ) {
+      meetingToDelete.remove()
     }
+
+    document.getElementById("meetingCountNumber").innerHTML = parseInt(document.getElementById("meetingCountNumber").innerHTML) - 1;
+
+    //update API oject
+    /*
+    chosenNeighborhood.meetings = 
+    "id": 1,
+            "meeting_kind": "Neighborhood Association",
+            "format": "Virtual",
+            "frequency_1": "Monthly",
+            "frequency_2": "First",
+            "frequency_3": "Saturday",
+            "open_to_public": true,
+            "elections_held": "false",
+            "start_time": "2000-01-01T18:00:00.000Z",
+            "address": "1234 main ave",
+            "city": "Somewhere",
+            "state": "CA",
+            "zip": "95814"
+          */
   }
 
-  function showPopUp(popUpType) {
+
+  function showPopUp(popUpType, element) {
+    sessionStorage.deleteId = element.parentElement.getAttribute("id");
+
     if(document.querySelector(".showPopUp")){
       document.querySelector(".showPopUp").classList.toggle("showPopUp");
     }
     document.getElementById(popUpType).classList.toggle("showPopUp")
+
   }
 
   function closePopUp() {
