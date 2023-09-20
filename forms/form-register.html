@@ -221,7 +221,7 @@
             <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
               What is the name of your neighborhood organization?
             </h1>
-            <span for="browser">Begin typing the neighborhood organization name here…</span><br /><br />
+            <span for="browser" class="boldLight">Begin typing the neighborhood organization name here…</span><br /><br />
             <div>
             <input list="browsers" name="browser" id="browser" oninput="organizationChoose(event)">
             <datalist id="browsers">
@@ -235,7 +235,7 @@
             </h1>
             <div class="row">
               <div class="col-lg-3">
-                <div class="pt-3">Organization Name</div>  
+                <div class="pt-3 boldLight">Organization Name</div>  
               </div>
               <div class="col-lg-9">
                 <div class="d-inline-block myp-2 p2-xtra">
@@ -244,8 +244,8 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-3">
-                Mailing Address
+              <div class="col-lg-3 boldLight">
+                <p style="margin-top: 18px;">Mailing Address</p>
               </div>
               <div class="col-lg-8">
                 <div class="d-inline-block myp-2 p2-xtra">
@@ -286,8 +286,9 @@
             </div>
 
             <div class="row">
-              <div class="col-lg-4">
-                Organization boundaries<br /><br />
+              <div class="col-lg-4 boldLight">
+                <p style="margin-top: 18px;">Organization boundaries</p>
+                <br/>
                 <input style="width: 15px;height: 15px;padding: 10px;margin: 1px;" type="checkbox" id="boundaries" name="boundaries" value="boundaries">These boundaries are approximate.
               </div>
               <div class="col-lg-8">
@@ -305,8 +306,8 @@
               Neighborhood organization communications
             </h1>
             <div class="row">
-              <div class="col-lg-3">
-                Provide links for all resources that apply
+              <div class="col-lg-3 boldLight">
+                <p style="margin-top: 18px;">Provide links for all resources that apply</p>
               </div>
               <div class="col-lg-9">
                 <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Website" size="15"></div>
@@ -350,7 +351,7 @@
                     </div>
                   </div>
                   <div class="flex">
-                    <div class="" style="width: 93px;">
+                    <div class="" style="width: 101px;">
                       <span>Format: </span>
                     </div>
                     <div class="">
@@ -448,7 +449,7 @@
                     </div>
                     <div class="">
                   	  <div class="d-inline-block myp-2 p2-xtra">
-                        <input placeholder="0:00" id="meeting_time" style="width:100px;"><br />
+                        <input placeholder="00:00" id="meeting_time" style="width:100px;"><br />
                         <input placeholder="AM/PM" id="meeting_ampm" style="width:100px;">
                   	  </div>
                     </div>
@@ -458,9 +459,9 @@
               </div>
 
 
-              <div class="row">
-                <div class="col-lg-2" style="width:126px !important;">
-                  Location
+              <div class="flex">
+                <div class="col-lg-2 boldLight" style="width:126px !important;">
+                  <p style="margin-top: 18px;">Location</p>
                 </div>
                 <div class="col-lg-8">
                   <div class="d-inline-block myp-2 p2-xtra">
@@ -495,7 +496,9 @@
               </h1>
               <img src="../images/icon/trash.svg" class="absoluteRight icon" onclick="showPopUp('deleteContactPopUp', this)">
             	<div class="row">
-                <div class="col-lg-3">Contact Name</div>
+                <div class="col-lg-3 boldLight">
+                  <p style="margin-top: 18px;">Contact Name</p>
+                </div>
                 <div class="col-lg-9">
                   <div class="d-inline-block myp-2 p2-xtra">
                     <input placeholder="First" id="contact_first_name" size="15">
@@ -507,7 +510,9 @@
                     <input placeholder="Last" size="15" id="contact_last_name">
                   </div>
                 </div>
-                <div class="col-lg-3">Title</div>
+                <div class="col-lg-3 boldLight">
+                  <p style="margin-top: 18px;">Title</p>
+                </div>
                 <div class="col-lg-4">
                   <div class="d-inline-block myp-2 p2-xtra">
                     <select name="title" id="contact_title" style="width: 562px;">
@@ -534,7 +539,9 @@
                 </div>
             	  </div>
               <div style="clear: both;"></div>
-            	<div class="col-lg-3">Primary Contact</div>
+            	<div class="col-lg-3 boldLight">
+                <p style="margin-top: 18px;">Primary Contact</p>
+              </div>
                 <div class="col-lg-9">
             		<div class="d-inline-block myp-2 p2-xtra">
             		<select name="primary-contact" id="contact_primary-contact">
@@ -546,7 +553,9 @@
                     <input placeholder="Phone" id="contact_phone" style="width: 280px;">
                   </div>
                 </div>
-            	<div class="col-lg-3">Mailing Address</div>
+            	<div class="col-lg-3 boldLight">
+                <p style="margin-top: 18px;">Mailing Address</p>
+              </div>
                 <div class="col-lg-7">
                   <div class="d-inline-block myp-2 p2-xtra">
                     <input size="15" id="contact_street" placeholder="Street OR PO Box" >
@@ -823,7 +832,10 @@
       let startHour = parseInt(meeting.start_time.slice(11, 13));
       console.log(startHour)
       let startMinute = meeting.start_time.slice(14, 16)
+
       if(startHour > 12){ startHour = startHour - 12}
+      if(startHour < 10){ startHour = "0" + startHour.toString()}
+
       document.getElementById("meeting_time" + meetingCount).value = startHour + ":" + startMinute;
 
       document.querySelectorAll("#meeting_ampm")[1].setAttribute("id", "meeting_ampm" + meetingCount);
