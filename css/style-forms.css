@@ -211,6 +211,16 @@ input, select {
   font-size: 17px;
   font-family: Raleway;
   border: 1px solid #aaaaaa;
+  color: #484848;
+}
+
+input::placeholder {
+  color: #484848;
+  opacity: 1; /* Firefox */
+}
+
+input::-ms-input-placeholder { /* Edge 12 -18 */
+  color: #484848;
 }
 
 input {
@@ -319,9 +329,12 @@ background-color: #0084CA !important;
   width: 4%;
   height: 10%;
   right: -1rem;
-  top: 0%;
+  top: -1.3%;
 }
 
+.boldLight {
+  font-weight: 600;
+}
 
 .contact {
   position: relative;
@@ -364,6 +377,14 @@ background-color: #0084CA !important;
 .meeting {
   margin-bottom: 4rem;
   position: relative;
+}
+
+.meetingDataRow > .column > .flex {
+  align-items: center;
+}
+
+.meetingDataRow > .column > .flex span {
+  font-weight: 600;
 }
 
 .meetingCount {
