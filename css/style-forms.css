@@ -338,6 +338,11 @@ background-color: #0084CA !important;
 
 .contact {
   position: relative;
+  margin-bottom: 4rem;
+}
+
+.contact .absoluteRight {
+  top:-1.75%;
 }
 
 .column {
