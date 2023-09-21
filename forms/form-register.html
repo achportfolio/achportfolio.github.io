@@ -269,18 +269,21 @@
               Neighborhood organization information continued…</h1>
             <h4>Organization type</h4>
             <div>
-              <label for="optsetogid3">Homes Association, Homeowners Association, Property Owners Association</label>
+              <label for="optsetogid3" onclick="chooseOrganizationType(this)">Homes Association, Homeowners Association, Property Owners Association</label>
               <input type="radio" id="optsetogid3" name="optset2" value="3"><br>
             	<div class="flex items-spaced">
-                <label for="optsetogid1">Neighborhood Association</label>
+                <label for="optsetogid1" onclick="chooseOrganizationType(this)">Neighborhood Association</label>
                 <input type="radio" id="optsetogid1" name="optset2" value="1"><br>
-                <label for="optsetogid2">Umbrella Organization</label>
+                <label for="optsetogid2" onclick="chooseOrganizationType(this)">Umbrella Organization</label>
                 <input type="radio" id="optsetogid2" name="optset2" value="2"><br>
               </div>
               <div class="flex items-spaced" style="margin:10px 0">
-                <label for="optsetogid4">Partner Organization</label>
-                <input type="radio" id="optsetogid4" name="optset2" value="4">
-                <label for="optsetogid5">Other</label>
+                <label for="optsetogid4" onclick="chooseOrganizationType(this)">Partner Organization</label>
+                <!--
+                  Do we need these radio buttons? Delete?
+                  <input type="radio" id="optsetogid4" name="optset2" value="4">
+                -->
+                <label for="optsetogid5" onclick="chooseOrganizationType(this)">Other</label>
                 <input type="radio" id="optsetogid5" name="optset2" value="5">
               </div>
             </div>
@@ -289,7 +292,10 @@
               <div class="col-lg-4 boldLight">
                 <p style="margin-top: 18px;">Organization boundaries</p>
                 <br/>
-                <input style="width: 15px;height: 15px;padding: 10px;margin: 1px;" type="checkbox" id="boundaries" name="boundaries" value="boundaries">These boundaries are approximate.
+                <div class="flex" style="align-items:center">
+                  <input style="width: 15px;height: 15px;padding: 10px;margin: 1px;" type="checkbox" id="boundaries" name="boundaries" value="boundaries">
+                  <p style="margin:0 0 0 0.6rem">These boundaries are approximate.</p>
+                </div>
               </div>
               <div class="col-lg-8">
                 <div class="d-inline-block myp-2 p2-xtra"><input placeholder="North Boundry" size="20"></div>
@@ -448,9 +454,9 @@
                       <span>Start Time:</span>
                     </div>
                     <div class="">
-                  	  <div class="d-inline-block myp-2 p2-xtra">
-                        <input placeholder="00:00" id="meeting_time" style="width:100px;"><br />
-                        <input placeholder="AM/PM" id="meeting_ampm" style="width:100px;">
+                  	  <div class="flex myp-2 p2-xtra">
+                        <input placeholder="00:00" id="meeting_time" style="width:57px;padding: 10px 7px">
+                        <input placeholder="AM/PM" id="meeting_ampm" style="width:43px;padding: 10px 5px">
                   	  </div>
                     </div>
                   </div>
@@ -492,10 +498,11 @@
           <div class="tab">
             <div class="column contact" id="contact">
               <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
-                Who are the contacts and/or officers for the organization?
+                Contacts and/or officers for the organization
               </h1>
               <img src="../images/icon/trash.svg" class="absoluteRight icon" onclick="showPopUp('deleteContactPopUp', this)">
-            	<div class="row">
+            	
+              <div class="row">
                 <div class="col-lg-3 boldLight">
                   <p style="margin-top: 18px;">Contact Name</p>
                 </div>
@@ -578,9 +585,9 @@
 
             <div class="post-fun" >
               <button class="meetingCount btn-style btn">
-                <p id="contactsCount">Contacts: 1</p>
+                <p id="contactsCount">Contacts: </p><p id="contactCountNumber">1</p>
               </button>
-              <button type="button" class="btn-style btn" >+ ADD CONTACT</button>
+              <button type="button" class="btn-style btn" onclick="showPopUp('addContactPopUp')">+ ADD CONTACT</button>
               </div>
           </div>
 
@@ -599,6 +606,7 @@
           
           <!-- Circles which indicates the steps of the form: -->
           <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
             <span class="step"></span>
@@ -624,8 +632,13 @@
       <button type="button" class="btn-style btn" onclick="closePopUp()" >Cancel</button>
     </div>
 
+    <div class="popUp" id="addContactPopUp">
+      <button type="button" class="btn-style btn" onclick="addContact()" >Add Contact</button>
+      <button type="button" class="btn-style btn" onclick="closePopUp()" >Cancel</button>
+    </div>
+
     <div class="popUp" id="deleteContactPopUp">
-      <button type="button" class="btn-style btn" onclick="closePopUp()" >Delete Contact</button>
+      <button type="button" class="btn-style btn" onclick="deleteContact()" >Delete Contact</button>
       <button type="button" class="btn-style btn" onclick="closePopUp()" >Cancel</button>
     </div>
 
@@ -672,70 +685,70 @@
     "newsletter": null,
     "phone": null,
     "contacts": [
-        {
-            "id": 91321,
-            "first_name": "Charles",
-            "middle_name": null,
-            "last_name": "Baca",
-            "title": "Contact Person",
-            "email": "charles@solo.com",
-            "primary": false,
-            "phone": "3331233214",
-            "city": "Logstead",
-            "address": "115",
-            "street": "20ST St",
-            "suite_number": "",
-            "state": "MO",
-            "zip": "10001"
-        },
-        {
-            "id": 91466,
-            "first_name": "Hans",
-            "middle_name": null,
-            "last_name": "Sopp",
-            "title": "Contact Person",
-            "email": "hans@solo.com",
-            "primary": false,
-            "phone": "1233211234",
-            "city": "Tellers",
-            "address": "211",
-            "street": "38ST St",
-            "suite_number": "",
-            "state": "MO",
-            "zip": "10021"
-        }
+      {
+        "id": 91321,
+        "first_name": "Charles",
+        "middle_name": null,
+        "last_name": "Baca",
+        "title": "Contact Person",
+        "email": "charles@solo.com",
+        "primary": false,
+        "phone": "3331233214",
+        "city": "Logstead",
+        "address": "115",
+        "street": "20ST St",
+        "suite_number": "",
+        "state": "MO",
+        "zip": "10001"
+      },
+      {
+        "id": 91466,
+        "first_name": "Hans",
+        "middle_name": null,
+        "last_name": "Sopp",
+        "title": "Contact Person",
+        "email": "hans@solo.com",
+        "primary": false,
+        "phone": "1233211234",
+        "city": "Tellers",
+        "address": "211",
+        "street": "38ST St",
+        "suite_number": "",
+        "state": "MO",
+        "zip": "10021"
+      }
     ],
     "meetings": [
-        {
-            "id": 1,
-            "meeting_kind": "Neighborhood Association",
-            "format": "Virtual",
-            "frequency_1": "Monthly",
-            "frequency_2": "First",
-            "frequency_3": "Saturday",
-            "open_to_public": true,
-            "elections_held": "false",
-            "start_time": "2000-01-01T18:00:00.000Z",
-            "address": "1234 main ave",
-            "city": "Somewhere",
-            "state": "CA",
-            "zip": "95814"
-        },
-        {
-            "id": 2,
-            "meeting_kind": "Neighborhood Association",
-            "format": "In-Person",
-            "frequency_1": "Weekly",
-            "frequency_2": "First",
-            "frequency_3": "Monday",
-            "open_to_public": false,
-            "elections_held": "true",
-            "start_time": "2000-01-01T14:00:00.000Z",
-            "address": "1234 main ave",
-            "city": "Somewhere",
-            "state": "CA",
-            "zip": "95814"
-        }
+      {
+        "id": 1,
+        "meeting_kind": "Neighborhood Association",
+        "format": "Virtual",
+        "frequency_1": "Monthly",
+        "frequency_2": "First",
+        "frequency_3": "Saturday",
+        "open_to_public": true,
+        "elections_held": "false",
+        "start_time": "2000-01-01T18:00:00.000Z",
+        "address": "1234 main ave",
+        "city": "Somewhere",
+        "state": "CA",
+        "zip": "95814"
+    },
+    {
+        "id": 2,
+        "meeting_kind": "Neighborhood Association",
+        "format": "In-Person",
+        "frequency_1": "Weekly",
+        "frequency_2": "First",
+        "frequency_3": "Monday",
+        "open_to_public": false,
+        "elections_held": "true",
+        "start_time": "2000-01-01T14:00:00.000Z",
+        "address": "1234 main ave",
+        "city": "Somewhere",
+        "state": "CA",
+        "zip": "95814"
+      }
     ]
   }
 
@@ -870,6 +883,8 @@
       const contacts = document.getElementsByClassName("contact");
 
       var contactClone = contacts[0].cloneNode(true);
+      const legacyId = contactClone.getAttribute("id");
+      contactClone.setAttribute("id", legacyId + index);
       contactClone.classList.toggle("displayNone");
       contacts[contacts.length - 1].insertAdjacentElement('afterend', contactClone);
 
@@ -907,19 +922,136 @@
     })
 
     //add the meeting count to the meetings button
-    document.getElementById("contactsCount").innerHTML= chosenNeighborhood.contacts.length < 6 ? "Contacts: " + chosenNeighborhood.contacts.length : "Contacts: 5+";
+    document.getElementById("contactCountNumber").innerHTML= chosenNeighborhood.contacts.length < 6 ? chosenNeighborhood.contacts.length : "Contacts: 5+";
 
   }
+
+  async function postData(url = "https://app.pbidmanager.com/api/v1/neighborhood_associations/NEED-POST-URL", data = {}) {
+
+    const data1 = {
+      "name": "49/63 Coalition",
+      "id": 88046,
+      "address": "115 20th St",
+      "street": "20th St",
+      "suite_number": null,
+      "city": "Logstead",
+      "state": "MO",
+      "zip": "10010",
+      "organization_type": "Umbrella Organization",
+      "organizatiobn_boundaries": {
+        "north_boundry":"51st St",
+        "south_boundry":"1st St",
+        "east_boundry": "1st Ave",
+        "west_boundry":"8th Ave",
+        "approximate_boundry":false
+      },
+      "status": "Active",
+      "website": null,
+      "email": null,
+      "facebook": null,
+      "instagram": null,
+      "twitter": null,
+      "nextdoor": null,
+      "newsletter": null,
+      "phone": null,
+      "contacts": [
+      {
+        "id": 91321,
+        "first_name": "Charles",
+        "middle_name": null,
+        "last_name": "Baca",
+        "title": "Contact Person",
+        "email": "charles@solo.com",
+        "primary": false,
+        "phone": "3331233214",
+        "city": "Logstead",
+        "address": "115",
+        "street": "20ST St",
+        "suite_number": "",
+        "state": "MO",
+        "zip": "10001"
+      },
+      {
+        "id": 91466,
+        "first_name": "Hans",
+        "middle_name": null,
+        "last_name": "Sopp",
+        "title": "Contact Person",
+        "email": "hans@solo.com",
+        "primary": false,
+        "phone": "1233211234",
+        "city": "Tellers",
+        "address": "211",
+        "street": "38ST St",
+        "suite_number": "",
+        "state": "MO",
+        "zip": "10021"
+      }
+    ],
+    "meetings": [
+      {
+        "id": 1,
+        "meeting_kind": "Neighborhood Association",
+        "format": "Virtual",
+        "frequency_1": "Monthly",
+        "frequency_2": "First",
+        "frequency_3": "Saturday",
+        "open_to_public": true,
+        "elections_held": "false",
+        "start_time": "2000-01-01T18:00:00.000Z",
+        "address": "1234 main ave",
+        "city": "Somewhere",
+        "state": "CA",
+        "zip": "95814"
+    },
+    {
+        "id": 2,
+        "meeting_kind": "Neighborhood Association",
+        "format": "In-Person",
+        "frequency_1": "Weekly",
+        "frequency_2": "First",
+        "frequency_3": "Monday",
+        "open_to_public": false,
+        "elections_held": "true",
+        "start_time": "2000-01-01T14:00:00.000Z",
+        "address": "1234 main ave",
+        "city": "Somewhere",
+        "state": "CA",
+        "zip": "95814"
+      }
+    ]
+  }
+
+    const response = await fetch(url, {
+      method: "POST",
+      mode: "cors",
+      cache: "no-cache",
+      credentials: "same-origin",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      redirect: "follow",
+      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    });
+    return response.json();
+  }
+
+  /*
+  postData("https://example.com/answer", { answer: 42 }).then((data) => {
+    console.log(data); // JSON data parsed by `data.json()` call
+  });
+  */
 
   function addMeeting() {
     closePopUp()
 
     const meetings = document.getElementsByClassName("meeting");
 
-    const meetingClone = meetings[meetings.length - 1].cloneNode(true)
+    const meetingClone = meetings[0].cloneNode(true)
     
-    const legacyId = meetingClone.getAttribute("id");
-    meetingClone.setAttribute("id", legacyId + index);
+    const legacyId = meetings[meetings.length - 1].getAttribute("id");
+    meetingClone.setAttribute("id", legacyId + (meetings.length - 1) );
 
     if(meetings[0].classList.contains("displayNone")){
       meetingClone.classList.toggle("displayNone")
@@ -958,9 +1090,60 @@
           */
   }
 
+  function addContact() {
+    closePopUp()
+
+    const contacts = document.getElementsByClassName("contact");
+
+    const contactClone = contacts[0].cloneNode(true)
+    
+    const legacyId = contacts[contacts.length - 1].getAttribute("id");
+    contactClone.setAttribute("id", legacyId + (contacts.length - 1) );
+
+    if(contacts[0].classList.contains("displayNone")){
+      contactClone.classList.toggle("displayNone")
+    }
+    contacts[contacts.length - 1].insertAdjacentElement('afterend', contactClone)
+
+  }
+
+  function deleteContact() {
+    closePopUp()
+
+    const contactToDelete = document.getElementById(sessionStorage.deleteId);
+
+    if( contactToDelete ) {
+      contactToDelete.remove()
+    }
+
+    document.getElementById("contactCountNumber").innerHTML = parseInt(document.getElementById("contactCountNumber").innerHTML) - 1;
+
+    //update API oject
+    /*
+    chosenNeighborhood.meetings = 
+    "id": 1,
+            "meeting_kind": "Neighborhood Association",
+            "format": "Virtual",
+            "frequency_1": "Monthly",
+            "frequency_2": "First",
+            "frequency_3": "Saturday",
+            "open_to_public": true,
+            "elections_held": "false",
+            "start_time": "2000-01-01T18:00:00.000Z",
+            "address": "1234 main ave",
+            "city": "Somewhere",
+            "state": "CA",
+            "zip": "95814"
+          */
+  }
+
 
   function showPopUp(popUpType, element) {
-    sessionStorage.deleteId = element.parentElement.getAttribute("id");
+    console.log(popUpType)
+    console.log(element)
+    if(element){
+      sessionStorage.deleteId = element.parentElement.getAttribute("id");
+    }
 
     if(document.querySelector(".showPopUp")){
       document.querySelector(".showPopUp").classList.toggle("showPopUp");
@@ -975,9 +1158,25 @@
     }
   }
 
+  function chooseOrganizationType(elementChosen) {
+    if(document.querySelector(".selectedButton")){
+      document.querySelector(".selectedButton").classList.toggle("selectedButton");
+    }
+    elementChosen.classList.toggle("selectedButton");
+
+    const organizationTypeChosen = elementChosen.value
+    console.log(organizationTypeChosen)
+    //CHANGE API POST VALUE HERE - CHOSEN NEIGHBORHOOD
+  }
+
   function showTab(n) {
     // This function will display the specified tab of the form ...
     var x = document.getElementsByClassName("tab");
+
+    if(!x[n]){
+      return false
+    }
+    
     x[n].style.display = "block";
     // ... and fix the Previous/Next buttons:
 
@@ -997,21 +1196,34 @@
 
   function nextPrev(n) {
     // This function will figure out which tab to display
+    
     var x = document.getElementsByClassName("tab");
     // Exit the function if any field in the current tab is invalid:
-    if (n == 1 && !validateForm()) return false;
+    //if (n == 1 && !validateForm()) return false;
+    
     // Hide the current tab:
     x[currentTab].style.display = "none";
+    
     // Increase or decrease the current tab by 1:
     currentTab = currentTab + n;
+    
     // if you have reached the end of the form... :
+    /*
     if (currentTab >= x.length) {
       //...the form gets submitted:
       document.getElementById("regForm").submit();
       return false;
     }
+    */
+    
     // Otherwise, display the correct tab:
     showTab(currentTab);
+
+    console.log(event.target.value)
+    if(document.getElementById("nextBtn").innerHTML === "Submit"){
+      //showPopUp('deleteMeetingPopUp')
+      //triggering when clicking next after meeting tab
+    }
   }
 
   function validateForm() {
@@ -1043,7 +1255,9 @@
       x[i].className = x[i].className.replace(" active", "");
     }
     //... and adds the "active" class to the current step:
-    x[n].className += " active";
+    if(x[n]){
+      x[n].className += " finish";
+    }
   }
 
     window.addEventListener("load", (event) => {
