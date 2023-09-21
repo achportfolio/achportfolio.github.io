@@ -222,7 +222,9 @@
                 Registered organization search
               </h1>
               <div class="row">
-              <div class="col-lg-3">At least one search criteria is required</div>
+              <div class="col-lg-3 boldLight">
+                <p style="margin-top: 18px;">At least one search criteria is required</p>
+              </div>
               <div class="col-lg-9">
                 <div class="d-block myp-2 p2-xtra">
                   <input list="browsers" name="browser" id="browser" oninput="organizationChoose(event)" style="width:460px">
@@ -234,7 +236,9 @@
               </div>
               </div>
               <div class="row">
-                <div class="col-lg-3">Council District</div>
+                <div class="col-lg-3 boldLight">
+                  <p style="margin-top: 18px;">Council District</p>
+                </div>
                 <div class="col-lg-3">
                   <div class="d-inline-block myp-2 p2-xtra">
                   <select name="council-district" id="council-district" style="width:82px;">
@@ -254,7 +258,9 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-3">Organization type</div>
+                <div class="col-lg-3 boldLight">
+                  <p style="margin-top: 18px;">Organization type</p>
+                </div>
                 <div class="col-lg-5">
                   <div class="d-inline-block myp-2 p2-xtra">
                     <select name="0rganization-type" id="organization-type" style="width:220px;">
@@ -268,7 +274,9 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-3">Report type</div>
+                <div class="col-lg-3 boldLight">
+                  <p style="margin-top: 18px;">Report type</p>
+                </div>
                 <div class="col-lg-5">
                   <div class="d-inline-block myp-2 p2-xtra">
                     <select name="report-type" id="report-type" style="width:220px;">
@@ -284,19 +292,13 @@
               <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">Organization search results</h1>
           	<span>For a detailed organization report, select at least one organization from the results below.</span>
             <br />
+              <!--
               <input type="radio" id="optsetid1" name="optset5" value="1"><label for="optsetid1">Flying Fig</label><br>
               <input type="radio" id="optsetid2" name="optset5" value="2"><label for="optsetid2">Flying Saucer</label><br>
               <input type="radio" id="optsetid3" name="optset5" value="3"><label for="optsetid3">Flying Tootsie Roll</label><br>
+            -->
             </div>
 
-            <div class="tab">
-              <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">Mailing (contact) search results</h1>
-          	<span>For a mailing (contact) report, select the report format type below.</span><br />
-            <div style="clear:both"></div>
-              <input type="radio" id="optsetid1" name="optset6" value="1"><label for="optsetid1">CSV</label><br>    
-              <input type="radio" id="optsetid2" name="optset6" value="2"><label for="optsetid2">XLS</label><br>    
-          	
-            </div>
           <div style="clear:both;">&nbsp;</div>
           <div style="clear:both;">&nbsp;</div>
             
@@ -312,7 +314,6 @@
             
             <!-- Circles which indicates the steps of the form: -->
             <div style="text-align:center;margin-top:40px;">
-              <span class="step"></span>
               <span class="step"></span>
               <span class="step"></span>
             </div>
@@ -372,7 +373,7 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
-  if (n == 2) {
+  if (n == 1) {
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Continue <i class='fas fa-arrow-right	 pr-2' aria-hidden='true'></i>";
