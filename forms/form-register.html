@@ -5,25 +5,24 @@
 
   <!-- ** Basic Page Needs ** -->
   <meta charset="utf-8">
-  <title>KC BizCare
+  <title>KC Neighborhood Connect
   </title>
 
   <!-- ** Mobile Specific Metas ** -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="KC BizCare">
+  <meta name="description" content="KC Neighborhood Connect">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="KC BizCare">
-  <meta name="generator" content="KC BizCare">
+  <meta name="author" content="KC Neighborhood Connect">
+  <meta name="generator" content="KC Neighborhood Connect">
 
   <!-- bootstrap.min css -->
   <!-- <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css"> -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
   <!-- fontawesome css -->
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../plugins/fontawesome/css/all.css">
   <!-- Icofont -->
-  <link rel="stylesheet" href="plugins/icofont/icofont.css">
+  <link rel="stylesheet" href="../plugins/icofont/icofont.css">
   <!-- Mulish -->
   <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
 
@@ -52,7 +51,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top trans-navigation">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="https://pbidmanager.github.io/index">
         <img src="../images/logo.png" alt="" class="img-fluid b-logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
@@ -64,7 +63,7 @@
 
       <div class="collapse navbar-collapse " id="mainNav">
         <ul class="navbar-nav">
-          <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="https://pbidmanager.github.io/index">Home </a> </li>
             <li class="nav-item dropdown has-megamenu">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Organization<br />Information </a>
               <i style=" color: #fff;">▼</i>
@@ -78,7 +77,7 @@
                           <div class="service-box ">
                             <div class="row">
                               <div class="col">
-                                <img src="images/icon/menu-1.png" class="d-inline-block">
+                                <img src="../images/icon/menu-1.png" class="d-inline-block">
                                 <span class="">Register or update a neighborhood organization</span>
                               </div>
                             </div>
@@ -88,7 +87,7 @@
                           <div class="service-box ">
                             <div class="row">
                               <div class="col">
-                                <img src="images/icon/menu-2.png" class="d-inline-block">
+                                <img src="../images/icon/menu-2.png" class="d-inline-block">
                                 <span class="">Register or update <br />a neighborhood organization</span>
                               </div>
                             </div>
@@ -105,7 +104,7 @@
                           <div class="service-box ">
                             <div class="row">
                               <div class="col">
-                                <img src="images/icon/menu-3.png" class="d-inline-block">
+                                <img src="../images/icon/menu-3.png" class="d-inline-block">
                                 <span class="">Register or update a neighborhood organization</span>
                               </div>
                             </div>
@@ -115,7 +114,7 @@
                           <div class="service-box ">
                             <div class="row">
                               <div class="col">
-                                <img src="images/icon/menu-4.png" class="d-inline-block">
+                                <img src="../images/icon/menu-4.png" class="d-inline-block">
                                 <span class="">Register or update a neighborhood organization</span>
                               </div>
                             </div>
@@ -140,7 +139,7 @@
                         <div class="service-box ">
                           <div class="row">
                             <div class="col">
-                              <img src="images/icon/menu-1.png" class="d-inline-block">
+                              <img src="../images/icon/menu-1.png" class="d-inline-block">
                               <span class="">Register or update a neighborhood organization</span>
                             </div>
                           </div>
@@ -150,7 +149,7 @@
                         <div class="service-box ">
                           <div class="row">
                             <div class="col">
-                              <img src="images/icon/menu-2.png" class="d-inline-block">
+                              <img src="../images/icon/menu-2.png" class="d-inline-block">
                               <span class="">Register or update <br />a neighborhood organization</span>
                             </div>
                           </div>
@@ -167,7 +166,7 @@
                         <div class="service-box ">
                           <div class="row">
                             <div class="col">
-                              <img src="images/icon/menu-3.png" class="d-inline-block">
+                              <img src="../images/icon/menu-3.png" class="d-inline-block">
                               <span class="">Register or update a neighborhood organization</span>
                             </div>
                           </div>
@@ -177,7 +176,7 @@
                         <div class="service-box ">
                           <div class="row">
                             <div class="col">
-                              <img src="images/icon/menu-4.png" class="d-inline-block">
+                              <img src="../images/icon/menu-4.png" class="d-inline-block">
                               <span class="">Register or update a neighborhood organization</span>
                             </div>
                           </div>
@@ -225,6 +224,7 @@
             <div>
             <input list="browsers" name="browser" id="browser" oninput="organizationChoose(event)">
             <datalist id="browsers">
+              <option value=" " data-info="neighborhood" id="0">
             </datalist>
             </div>
           </div>
@@ -276,15 +276,7 @@
                 <input type="radio" id="optsetogid1" name="optset2" value="1"><br>
                 <label for="optsetogid2" onclick="chooseOrganizationType(this)">Umbrella Organization</label>
                 <input type="radio" id="optsetogid2" name="optset2" value="2"><br>
-              </div>
-              <div class="flex items-spaced" style="margin:10px 0">
-                <label for="optsetogid4" onclick="chooseOrganizationType(this)">Partner Organization</label>
-                <!--
-                  Do we need these radio buttons? Delete?
-                  <input type="radio" id="optsetogid4" name="optset2" value="4">
-                -->
                 <label for="optsetogid5" onclick="chooseOrganizationType(this)">Other</label>
-                <input type="radio" id="optsetogid5" name="optset2" value="5">
               </div>
             </div>
 
@@ -298,10 +290,17 @@
                 </div>
               </div>
               <div class="col-lg-8">
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="North Boundry" size="20"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="South Boundry" size="20"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="East Boundry" size="20"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="West Boundry" size="20"></div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="northBoundary" placeholder="North Boundary" size="20">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="southBoundary" placeholder="South Boundary" size="20">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="eastBoundary" placeholder="East Boundary" size="20"></div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="westBoundary" placeholder="West Boundary" size="20">
+                </div>
               </div>
             </div>
           </div>
@@ -316,14 +315,29 @@
                 <p style="margin-top: 18px;">Provide links for all resources that apply</p>
               </div>
               <div class="col-lg-9">
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Website" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Newsletter sign-up" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="General email" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="General phone" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Facebook" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Twitter" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Instagram" size="15"></div>
-                <div class="d-inline-block myp-2 p2-xtra"><input placeholder="Other" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="website" placeholder="Website" size="15">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="newsletter" placeholder="Newsletter sign-up" size="15">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="email" placeholder="General email" size="15">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="phone" placeholder="General phone" size="15"></div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="facebook" placeholder="Facebook" size="15">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="twitter" placeholder="Twitter" size="15">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="instagram" placeholder="Instagram" size="15">
+                </div>
+                <div class="d-inline-block myp-2 p2-xtra">
+                  <input id="other" placeholder="Other" size="15">
+                </div>
               </div>
             </div>
 
@@ -331,6 +345,10 @@
 
           </div>
           <div class="tab">
+            <div class="meetingCount">
+              <p id="meetingCount">Current Meeting(s): </p>
+              <p id="meetingCountNumber">1</p>
+            </div>
             <div class="column meeting" id="meeting">
               <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
                 Neighborhood organization meeting information
@@ -379,7 +397,7 @@
                     <div class="myalign"><span>Frequency 1: </span></div>
                     <div class="">
                   	  <div class="d-inline-block myp-2 p2-xtra">
-                        <select name="frq1" id="frq1" style="width:110px;">
+                        <select name="frq1" id="frq1_" style="width:110px;">
                           <option value="Monthly">Monthly</option>
                           <option value="Even Months">Even months</option>
                           <option value="Odd Months">Odd months</option>
@@ -395,7 +413,7 @@
                     <div class="myalign"><span>Frequency 2: </span></div>
                     <div class="">
                       <div class="d-inline-block myp-2 p2-xtra">
-                        <select name="frq2" id="frq2" style="width:110px;">
+                        <select name="frq2" id="frq2_" style="width:110px;">
                           <option value="First">First</option>
                           <option value="Second">Second</option>
                           <option value="Third">Third</option>
@@ -410,7 +428,7 @@
                     <div class="myalign"><span>Frequency 3: </span></div>
                     <div class="">
                       <div class="d-inline-block myp-2 p2-xtra">
-                        <select name="frq3" id="frq3" style="width:110px;">
+                        <select name="frq3" id="frq3_" style="width:110px;">
                           <option value="Sunday">Sunday</option>
                           <option value="Monday">Monday</option>
                           <option value="Tuesday">Tuesday</option>
@@ -487,18 +505,18 @@
             </div>
 
             <div class="post-fun">
-            <button class="meetingCount btn-style btn">
-              <p id="meetingCount">Meetings: </p><p id="meetingCountNumber">1</p>
-            </button>
               <button type="button" class="btn-style btn" onclick="showPopUp('addMeetingPopUp')">+ ADD MEETING</button>
             </div>
           </div>
 
 
           <div class="tab">
+            <div class="meetingCount">
+              <p id="contactsCount">Current Contact(s): </p><p id="contactCountNumber">1</p>
+            </div>
             <div class="column contact" id="contact">
               <h1 class="section-title" style=" font-weight: 900; padding-bottom:20px; color: #0084ca">
-                Contacts and/or officers for the organization
+                Contacts for the organization
               </h1>
               <img src="../images/icon/trash.svg" class="absoluteRight icon" onclick="showPopUp('deleteContactPopUp', this)">
             	
@@ -584,9 +602,6 @@
             </div>
 
             <div class="post-fun" >
-              <button class="meetingCount btn-style btn">
-                <p id="contactsCount">Contacts: </p><p id="contactCountNumber">1</p>
-              </button>
               <button type="button" class="btn-style btn" onclick="showPopUp('addContactPopUp')">+ ADD CONTACT</button>
               </div>
           </div>
@@ -653,19 +668,16 @@
   =====================================-->
 
 
-  <!-- Bootstrap css -->
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
-  <script src="plugins/google-map/map.js"></script>
-
   <!-- main script -->
   <!-- <script src="js/script.js"></script> -->
 <script>
-  var neighborhoods = JSON.parse(sessionStorage.neighborhoods)
+  var neighborhoods;
+  if(sessionStorage.neighborhoods){
+    neighborhoods = JSON.parse(sessionStorage.neighborhoods)
+  }
 
-  var chosenNeighborhood = {
+  var chosenNeighborhood = {};
+    /*
     "name": "Flying Fig",
     "id": 66332,
     "address": "115",
@@ -751,6 +763,7 @@
       }
     ]
   }
+  */
 
   var currentTab = 0; // Current tab is set to be the first tab (0)
   showTab(currentTab); // Display the current tab
@@ -760,10 +773,10 @@
     let neighborhoodDataFilter = neighborhoods.filter( (neighborhood) => neighborhood.name == event.target.value )[0];
 
     //only run the function if neighborhood matches DB
+    //alert user if there is no match
     if(!neighborhoodDataFilter) {
       return false
-  }
-
+    }
 
     const response = await fetch('https://app.pbidmanager.com/api/v1/neighborhood_associations/association_details?district_id=241&association_id=' + neighborhoodDataFilter.id, {
       headers: {
@@ -773,9 +786,9 @@
     })
     const neighborhoodData = await response.json()
     console.log(neighborhoodData)
-    //chosenNeighborhood = neighborhoodData;
+    chosenNeighborhood = neighborhoodData.data.neighborhood_associations;
 
-    //sessionStorage.neighborhoodChosen = JSON.stringify(neighborhoodData.data.neighborhood_associations)
+    sessionStorage.neighborhoodChosen = JSON.stringify(neighborhoodData.data.neighborhood_associations)
     loadNeighborhoodData(event)
   }
 
@@ -785,24 +798,10 @@
     //turn this into API call that uses neighborhood id
     let neighborhoodData = neighborhoods.filter( (neighborhood) => neighborhood.name == event.target.value );
 
-    //input street data
-    if(neighborhoodData){
-      neighborhoodData[0] = {
-        name: neighborhoodData[0].name,
-        id: neighborhoodData[0].id,
-        street:"10829 Baltimore Ave", 
-        city:"Kansas City", 
-        state:"MO", 
-        zip:"64114"
-      }
-      document.getElementById("city").value = neighborhoodData[0].city;
-      document.getElementById("state").value = neighborhoodData[0].state;
-      document.getElementById("streetAddress").value = neighborhoodData[0].street;
-      document.getElementById("zipCode").value = neighborhoodData[0].zip;
-    }
-
     //hide meeting cloned item
-    document.querySelector(".meeting").classList.toggle("displayNone");
+    if(chosenNeighborhood.meetings.length > 1){
+      document.querySelector(".meeting").classList.toggle("displayNone");
+    }
     
     //input meeting data
     chosenNeighborhood.meetings.forEach( (meeting, index) => {
@@ -816,6 +815,21 @@
       meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone);
 
       console.log(meeting)
+
+      //input street data
+      if(neighborhoodData){
+        document.querySelectorAll("#city")[1].setAttribute("id", "city" + meetingCount);
+        document.getElementById("city").value = neighborhoodData[0].city;
+
+        document.querySelectorAll("#state")[1].setAttribute("id", "state" + meetingCount);
+        document.getElementById("state").value = neighborhoodData[0].state;
+        
+        document.querySelectorAll("#streetAddress")[1].setAttribute("id", "streetAddress" + meetingCount);
+        document.getElementById("streetAddress").value = neighborhoodData[0].street;
+        
+        document.querySelectorAll("#zipCode")[1].setAttribute("id", "zipCode" + meetingCount);
+        document.getElementById("zipCode").value = neighborhoodData[0].zip;
+      }
 
       document.querySelectorAll("#meeting_type")[1].setAttribute("id", "meeting_type" + meetingCount);
       document.getElementById("meeting_type" + meetingCount).value = meeting.meeting_kind;
@@ -870,14 +884,18 @@
     })
 
     //add the meeting count to the meetings button
-    document.getElementById("meetingCount").innerHTML= "Meetings: ";
+    document.getElementById("meetingCount").innerHTML= "Current Meeting(s): ";
 
     document.getElementById("meetingCountNumber").innerHTML= chosenNeighborhood.meetings.length < 6 ? chosenNeighborhood.meetings.length : "5+";
 
 
+    //LOAD CONTACT DATA
+
     //hide contact cloned item
-    document.querySelector(".contact").classList.toggle("displayNone");
-    //input meeting data
+    if(chosenNeighborhood.meetings.length > 1){ 
+      document.querySelector(".contact").classList.toggle("displayNone");
+    }
+
     chosenNeighborhood.contacts.forEach( (contact, index) => {
       let contactCount = index;
       const contacts = document.getElementsByClassName("contact");
@@ -901,6 +919,9 @@
 
       document.querySelectorAll("#contact_title")[1].setAttribute("id", "contact_title" + contactCount);
       document.getElementById("contact_title" + contactCount).value = contact.title;
+
+      document.querySelectorAll("#contact_email")[1].setAttribute("id", "contact_email" + contactCount);
+      document.getElementById("contact_email" + contactCount).value = contact.email;
 
       document.querySelectorAll("#contact_primary-contact")[1].setAttribute("id", "contact_primary-contact" + contactCount);
       document.getElementById("contact_primary-contact" + contactCount).value = contact.primary === false? "No":"Yes";
@@ -926,102 +947,201 @@
 
   }
 
-  async function postData(url = "https://app.pbidmanager.com/api/v1/neighborhood_associations/NEED-POST-URL", data = {}) {
+  async function postData(url, dataPull) {
 
-    const data1 = {
-      "name": "49/63 Coalition",
-      "id": 88046,
-      "address": "115 20th St",
-      "street": "20th St",
-      "suite_number": null,
-      "city": "Logstead",
-      "state": "MO",
-      "zip": "10010",
-      "organization_type": "Umbrella Organization",
-      "organizatiobn_boundaries": {
-        "north_boundry":"51st St",
-        "south_boundry":"1st St",
-        "east_boundry": "1st Ave",
-        "west_boundry":"8th Ave",
-        "approximate_boundry":false
-      },
-      "status": "Active",
-      "website": null,
-      "email": null,
-      "facebook": null,
-      "instagram": null,
-      "twitter": null,
-      "nextdoor": null,
-      "newsletter": null,
-      "phone": null,
-      "contacts": [
-      {
-        "id": 91321,
-        "first_name": "Charles",
-        "middle_name": null,
-        "last_name": "Baca",
-        "title": "Contact Person",
-        "email": "charles@solo.com",
-        "primary": false,
-        "phone": "3331233214",
-        "city": "Logstead",
-        "address": "115",
-        "street": "20ST St",
-        "suite_number": "",
-        "state": "MO",
-        "zip": "10001"
-      },
-      {
-        "id": 91466,
-        "first_name": "Hans",
-        "middle_name": null,
-        "last_name": "Sopp",
-        "title": "Contact Person",
-        "email": "hans@solo.com",
-        "primary": false,
-        "phone": "1233211234",
-        "city": "Tellers",
-        "address": "211",
-        "street": "38ST St",
-        "suite_number": "",
-        "state": "MO",
-        "zip": "10021"
-      }
-    ],
-    "meetings": [
-      {
-        "id": 1,
-        "meeting_kind": "Neighborhood Association",
-        "format": "Virtual",
-        "frequency_1": "Monthly",
-        "frequency_2": "First",
-        "frequency_3": "Saturday",
-        "open_to_public": true,
-        "elections_held": "false",
-        "start_time": "2000-01-01T18:00:00.000Z",
-        "address": "1234 main ave",
-        "city": "Somewhere",
-        "state": "CA",
-        "zip": "95814"
-    },
-    {
-        "id": 2,
-        "meeting_kind": "Neighborhood Association",
-        "format": "In-Person",
-        "frequency_1": "Weekly",
-        "frequency_2": "First",
-        "frequency_3": "Monday",
-        "open_to_public": false,
-        "elections_held": "true",
-        "start_time": "2000-01-01T14:00:00.000Z",
-        "address": "1234 main ave",
-        "city": "Somewhere",
-        "state": "CA",
-        "zip": "95814"
-      }
-    ]
+  //address data collection and update
+  chosenNeighborhood['address'] = document.getElementById("streetAddress").value;
+  chosenNeighborhood['city'] = document.getElementById("city").value;
+  chosenNeighborhood['state'] = document.getElementById("state").value;
+  chosenNeighborhood['zip'] = document.getElementById("zipCode").value;
+
+  if(document.querySelector('.selectedButton')) {
+    chosenNeighborhood['organization_type'] = document.querySelector('.selectedButton').innerHTML;
   }
 
+
+  //Boundaries data collection and update
+  if(!chosenNeighborhood['organization_boundaries']) {
+    chosenNeighborhood['organization_boundaries'] ={
+      north_boundry:"",
+      south_boundry:"",
+      east_boundry: "",
+      west_boundry:"",
+      approximate_boundry: false
+    }
+  }
+
+  if(document.querySelector('#northBoundary').value){
+    chosenNeighborhood['organization_boundaries']['north_boundry'] = document.querySelector('#northBoundary').value;
+  }
+  if(document.querySelector('#eastBoundary').value){
+    chosenNeighborhood['organization_boundaries']['east_boundry'] = document.querySelector('#eastBoundary').value;
+  }
+  if(document.querySelector('#southBoundary').value){
+    chosenNeighborhood['organization_boundaries']['south_boundry'] = document.querySelector('#southBoundary').value;
+  }
+  if(document.querySelector('#westBoundary').value){
+    chosenNeighborhood['organization_boundaries']['west_boundry'] = document.querySelector('#westBoundary').value;
+  }
+
+  console.log(document.querySelector('#boundaries').checked)
+
+  if(document.querySelector('#boundaries').value){
+    chosenNeighborhood['organization_boundaries']['approximate_boundry'] = document.querySelector('#boundaries').checked;
+  }
+
+
+
+  //Links data collection and update
+
+  if(document.querySelector('#website').value){
+    chosenNeighborhood['website'] = document.querySelector('#website').value;
+  }
+  if(document.querySelector('#newsletter').value){
+    chosenNeighborhood['newsletter'] = document.querySelector('#newsletter').value;
+  }
+  if(document.querySelector('#email').value){
+    chosenNeighborhood['email'] = document.querySelector('#email').value;
+  }
+  if(document.querySelector('#phone').value){
+    chosenNeighborhood['phone'] = document.querySelector('#phone').value;
+  }
+  if(document.querySelector('#facebook').value){
+    chosenNeighborhood['facebook'] = document.querySelector('#facebook').value;
+  }
+  if(document.querySelector('#twitter').value){
+    chosenNeighborhood['twitter'] = document.querySelector('#twitter').value;
+  }
+  if(document.querySelector('#instagram').value){
+    chosenNeighborhood['instagram'] = document.querySelector('#instagram').value;
+  }
+  if(document.querySelector('#other').value){
+    chosenNeighborhood['other'] = document.querySelector('#other').value;
+  }
+
+
+  //MEETINGS DATA COLLECTION AND UPDATE
+
+  Array.from(document.getElementsByClassName('meeting')).forEach( (meeting, index) => {
+    
+    let meetingCounter = index - 1;
+
+    if(meetingCounter === -1){
+      meetingCounter = "";
+    }
+
+    if(!document.getElementById("meeting_type" + meetingCounter)) {
+      return false
+    }
+
+    let meetingInfo = {
+      id: null,
+      meeting_kind: "",
+      format: "",
+      frequency_1: "",
+      frequency_2: "",
+      frequency_3: "",
+      open_to_public: false,
+      elections_held: false,
+      start_time: "",
+      time:"",
+      am_pm:"",
+      address: "",
+      city: "",
+      state: "",
+      zip: ""
+    };
+
+    meetingInfo['meeting_kind'] = document.getElementById("meeting_type" + meetingCounter).value;
+
+    meetingInfo['format'] = document.getElementById("format" + meetingCounter).value;
+
+    console.log("frq1_" + meetingCounter)
+    meetingInfo['frequency_1'] = document.getElementById("frq1_" + meetingCounter).value;
+
+    meetingInfo['frequency_2'] = document.getElementById("frq2_" + meetingCounter).value;
+
+    meetingInfo['frequency_3'] = document.getElementById("frq3_" + meetingCounter).value;
+
+    meetingInfo['open_to_public'] = document.getElementById("public" + meetingCounter).value;
+
+    meetingInfo['elections_held'] = document.getElementById("elections" + meetingCounter).value;
+
+    meetingInfo['start_time'] = document.getElementById("meeting_time" + meetingCounter).value;
+
+    meetingInfo['am_pm'] = document.getElementById("meeting_ampm" + meetingCounter).value;
+
+    meetingInfo['address'] = document.getElementById("meeting_address" + meetingCounter).value;
+
+    meetingInfo['state'] = document.getElementById("meeting_state" + meetingCounter).value;
+
+    meetingInfo['city'] = document.getElementById("meeting_city" + meetingCounter).value;
+
+    meetingInfo['zip'] = document.getElementById("meeting_zip" + meetingCounter).value;
+
+    chosenNeighborhood['meetings'].push(meetingInfo);
+  })
+
+
+
+  //CONTACTS DATA COLLECTION AND UPDATE
+
+  Array.from(document.getElementsByClassName('contact')).forEach( (meeting, index) => {
+    
+    let contactCounter = index - 1;
+
+    if(contactCounter === -1){
+      contactCounter = "";
+    }
+
+    if(!document.getElementById("contact_first_name" + contactCounter)) {
+      return false
+    }
+
+    let contactInfo =  {
+      id: null,
+      first_name: "",
+      middle_name: null,
+      last_name: "",
+      title: "",
+      email: "",
+      primary: false,
+      phone: "",
+      address: "",
+      city: "",
+      state: "",
+      zip: ""
+    };
+
+    contactInfo['first_name'] = document.getElementById("contact_first_name" + contactCounter).value;
+
+    contactInfo['middle_name'] = document.getElementById("contact_middle_name" + contactCounter).value;
+
+    contactInfo['last_name'] = document.getElementById("contact_last_name" + contactCounter).value;
+
+    contactInfo['title'] = document.getElementById("contact_title" + contactCounter).value;
+
+    contactInfo['email'] = document.getElementById("contact_email" + contactCounter).value;
+
+    contactInfo['primary'] = document.getElementById("contact_primary-contact" + contactCounter).value;
+
+    contactInfo['phone'] = document.getElementById("contact_phone" + contactCounter).value;
+
+    contactInfo['address'] = document.getElementById("contact_street" + contactCounter).value;
+
+    contactInfo['city'] = document.getElementById("contact_city" + contactCounter).value;
+
+    contactInfo['state'] = document.getElementById("contact_state" + contactCounter).value;
+
+    contactInfo['zip'] = document.getElementById("contact_zip" + contactCounter).value;
+
+    chosenNeighborhood['contacts'].push(contactInfo);
+  })
+
+
+  console.log(chosenNeighborhood)
+
+  /* API CALL, turn on when ready
     const response = await fetch(url, {
       method: "POST",
       mode: "cors",
@@ -1035,13 +1155,10 @@
       body: JSON.stringify(data), // body data type must match "Content-Type" header
     });
     return response.json();
-  }
-
-  /*
-  postData("https://example.com/answer", { answer: 42 }).then((data) => {
-    console.log(data); // JSON data parsed by `data.json()` call
-  });
   */
+
+  window.location="./form-submission-response.html"
+  }
 
   function addMeeting() {
     closePopUp()
@@ -1058,6 +1175,56 @@
     }
     meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone)
 
+    const meetingCount = chosenNeighborhood.meetings.length;
+
+    document.querySelectorAll("#meeting_type")[1].setAttribute("id", "meeting_type" + meetingCount);
+    document.getElementById("meeting_type" + meetingCount).value = "";
+
+    document.querySelectorAll("#format")[1].setAttribute("id", "format" + meetingCount);
+    document.getElementById("format" + meetingCount).value = "";
+
+    document.querySelectorAll("#frq1_")[1].setAttribute("id", "frq1_" + meetingCount);
+    document.getElementById("frq1_" + meetingCount).value = "";
+
+    document.querySelectorAll("#frq2_")[1].setAttribute("id", "frq2_" + meetingCount);
+    document.getElementById("frq2_" + meetingCount).value = "";
+
+    document.querySelectorAll("#frq3_")[1].setAttribute("id", "frq3_" + meetingCount);
+    document.getElementById("frq3_" + meetingCount).value = "";
+
+    document.querySelectorAll("#public")[1].setAttribute("id", "public" + meetingCount);
+    document.getElementById("public" + meetingCount).value = "No";
+
+    document.querySelectorAll("#elections")[1].setAttribute("id", "elections" + meetingCount);
+    document.getElementById("elections" + meetingCount).value = "No";
+
+    document.querySelectorAll("#meeting_time")[1].setAttribute("id", "meeting_time" + meetingCount);
+
+    document.getElementById("meeting_time" + meetingCount).value = "00:00";
+
+    document.querySelectorAll("#meeting_ampm")[1].setAttribute("id", "meeting_ampm" + meetingCount);
+    document.getElementById("meeting_ampm" + meetingCount).value = "AM";
+
+    document.querySelectorAll("#meeting_address")[1].setAttribute("id", "meeting_address" + meetingCount);
+    document.getElementById("meeting_address" + meetingCount).value = "";
+
+    document.querySelectorAll("#meeting_state")[1].setAttribute("id", "meeting_state" + meetingCount);
+    document.getElementById("meeting_state" + meetingCount).value = "";
+
+    document.querySelectorAll("#meeting_city")[1].setAttribute("id", "meeting_city" + meetingCount);
+    document.getElementById("meeting_city" + meetingCount).value = "";
+
+    document.querySelectorAll("#meeting_zip")[1].setAttribute("id", "meeting_zip" + meetingCount);
+    document.getElementById("meeting_zip" + meetingCount).value = "";
+    
+
+    //add the meeting count to the meetings button
+    document.getElementById("meetingCount").innerHTML= "Current Meeting(s): ";
+
+    document.getElementById("meetingCountNumber").innerHTML= chosenNeighborhood.meetings.length < 6 ? chosenNeighborhood.meetings.length : "5+";
+
+    document.getElementById("meetingCountNumber").innerHTML = parseInt(document.getElementById("meetingCountNumber").innerHTML) + 1;
+
   }
 
   function deleteMeeting() {
@@ -1070,24 +1237,6 @@
     }
 
     document.getElementById("meetingCountNumber").innerHTML = parseInt(document.getElementById("meetingCountNumber").innerHTML) - 1;
-
-    //update API oject
-    /*
-    chosenNeighborhood.meetings = 
-    "id": 1,
-            "meeting_kind": "Neighborhood Association",
-            "format": "Virtual",
-            "frequency_1": "Monthly",
-            "frequency_2": "First",
-            "frequency_3": "Saturday",
-            "open_to_public": true,
-            "elections_held": "false",
-            "start_time": "2000-01-01T18:00:00.000Z",
-            "address": "1234 main ave",
-            "city": "Somewhere",
-            "state": "CA",
-            "zip": "95814"
-          */
   }
 
   function addContact() {
@@ -1105,6 +1254,43 @@
     }
     contacts[contacts.length - 1].insertAdjacentElement('afterend', contactClone)
 
+    const contactCount = chosenNeighborhood.contacts.length;
+
+    document.querySelectorAll("#contact_first_name")[1].setAttribute("id", "contact_first_name" + contactCount);
+    document.getElementById("contact_first_name" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_middle_name")[1].setAttribute("id", "contact_middle_name" + contactCount);
+    document.getElementById("contact_middle_name" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_last_name")[1].setAttribute("id", "contact_last_name" + contactCount);
+    document.getElementById("contact_last_name" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_title")[1].setAttribute("id", "contact_title" + contactCount);
+    document.getElementById("contact_title" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_email")[1].setAttribute("id", "contact_email" + contactCount);
+    document.getElementById("contact_title" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_primary-contact")[1].setAttribute("id", "contact_primary-contact" + contactCount);
+    document.getElementById("contact_primary-contact" + contactCount).value = "No";
+
+    document.querySelectorAll("#contact_phone")[1].setAttribute("id", "contact_phone" + contactCount);
+    document.getElementById("contact_phone" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_street")[1].setAttribute("id", "contact_street" + contactCount);
+    document.getElementById("contact_street" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_city")[1].setAttribute("id", "contact_city" + contactCount);
+    document.getElementById("contact_city" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_state")[1].setAttribute("id", "contact_state" + contactCount);
+    document.getElementById("contact_state" + contactCount).value = "";
+
+    document.querySelectorAll("#contact_zip")[1].setAttribute("id", "contact_zip" + contactCount);
+    document.getElementById("contact_zip" + contactCount).value = "";
+
+    document.getElementById("contactCountNumber").innerHTML = parseInt(document.getElementById("contactCountNumber").innerHTML) + 1;
+
   }
 
   function deleteContact() {
@@ -1117,24 +1303,6 @@
     }
 
     document.getElementById("contactCountNumber").innerHTML = parseInt(document.getElementById("contactCountNumber").innerHTML) - 1;
-
-    //update API oject
-    /*
-    chosenNeighborhood.meetings = 
-    "id": 1,
-            "meeting_kind": "Neighborhood Association",
-            "format": "Virtual",
-            "frequency_1": "Monthly",
-            "frequency_2": "First",
-            "frequency_3": "Saturday",
-            "open_to_public": true,
-            "elections_held": "false",
-            "start_time": "2000-01-01T18:00:00.000Z",
-            "address": "1234 main ave",
-            "city": "Somewhere",
-            "state": "CA",
-            "zip": "95814"
-          */
   }
 
 
@@ -1219,8 +1387,11 @@
     // Otherwise, display the correct tab:
     showTab(currentTab);
 
-    console.log(event.target.value)
-    if(document.getElementById("nextBtn").innerHTML === "Submit"){
+    if(document.getElementById("nextBtn").innerHTML === "Submit" && currentTab === 6){
+      postData("https://app.pbidmanager.com/api/v1/neighborhood_associations/update_association", { answer: 42 }).then((data) => {
+      //console.log(data); // JSON data parsed by `data.json()` call
+    });
+
       //showPopUp('deleteMeetingPopUp')
       //triggering when clicking next after meeting tab
     }
@@ -1260,11 +1431,33 @@
     }
   }
 
-    window.addEventListener("load", (event) => {
+   async function loadNeigborhoods() {
+    const response = await fetch('https://app.pbidmanager.com/api/v1/neighborhood_associations/association_list?district_id=241', {
+      headers: {
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    })
+    const neighborhoodData = await response.json()
+    console.log(neighborhoodData)
+    sessionStorage.neighborhoods = JSON.stringify(neighborhoodData.data.neighborhood_associations)
+
+    let nieghborhoodsCall = neighborhoodData.data.neighborhood_associations.forEach((neighborhood) => {
+      document.getElementById("browsers").innerHTML += "<option value='" + neighborhood.name + "' data-info=" + neighborhood + " id=" + neighborhood.id + ">";
+    })
+  }
+
+  window.addEventListener("load", (event) => {
+    if(neighborhoods){
       let nieghborhoodsCall = neighborhoods.forEach((neighborhood) => {
         document.getElementById("browsers").innerHTML += "<option value='" + neighborhood.name + "' data-info=" + neighborhood + " id=" + neighborhood.id + ">";
       })
-    });
+    }
+    else {
+      loadNeigborhoods();
+    }
+
+  });
 
 
   </script>
