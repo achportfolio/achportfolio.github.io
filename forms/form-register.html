@@ -51,7 +51,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top trans-navigation">
     <div class="container">
-      <a class="navbar-brand" href="https://pbidmanager.github.io/index">
+      <a class="navbar-brand" href="index.html">
         <img src="../images/logo.png" alt="" class="img-fluid b-logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav"
@@ -63,9 +63,9 @@
 
       <div class="collapse navbar-collapse " id="mainNav">
         <ul class="navbar-nav">
-          <li class="nav-item active"> <a class="nav-link" href="https://pbidmanager.github.io/index">Home </a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="index.html">Home </a> </li>
             <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Organization<br />Information </a>
+              <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown"> Organization<br />Information </a>
               <i style=" color: #fff;">▼</i>
               <div class="dropdown-menu megamenu" role="menu">
                 <div class="row">
@@ -78,7 +78,9 @@
                             <div class="row">
                               <div class="col">
                                 <img src="../images/icon/menu-1.png" class="d-inline-block">
-                                <span class="">Register or update a neighborhood organization</span>
+              <a href="/forms/form-register.html">              
+                                <span class="">Renew or update a neighborhood organization</span>
+        </a>
                               </div>
                             </div>
                           </div>
@@ -88,7 +90,9 @@
                             <div class="row">
                               <div class="col">
                                 <img src="../images/icon/menu-2.png" class="d-inline-block">
-                                <span class="">Register or update <br />a neighborhood organization</span>
+              <a href="forms/form-register.html">             
+                                <span class="">Register <br />a neighborhood organization</span>
+        </a>
                               </div>
                             </div>
                           </div>
@@ -105,7 +109,9 @@
                             <div class="row">
                               <div class="col">
                                 <img src="../images/icon/menu-3.png" class="d-inline-block">
-                                <span class="">Register or update a neighborhood organization</span>
+              <a href="/forms/form-search.html">
+                                <span class="">Search for a neighborhood organization</span>
+        </a>
                               </div>
                             </div>
                           </div>
@@ -115,7 +121,9 @@
                             <div class="row">
                               <div class="col">
                                 <img src="../images/icon/menu-4.png" class="d-inline-block">
-                                <span class="">Register or update a neighborhood organization</span>
+              <a href="/forms/form-search.html">        
+                                <span class="">Generate mailing list for a neighborhood organization</span>
+        </a>
                               </div>
                             </div>
                           </div>
@@ -140,7 +148,9 @@
                           <div class="row">
                             <div class="col">
                               <img src="../images/icon/menu-1.png" class="d-inline-block">
-                              <span class="">Register or update a neighborhood organization</span>
+            <a href="/forms/form-register.html">
+                              <span class="">Renew or update a neighborhood organization</span>
+            </a>
                             </div>
                           </div>
                         </div>
@@ -150,7 +160,9 @@
                           <div class="row">
                             <div class="col">
                               <img src="../images/icon/menu-2.png" class="d-inline-block">
-                              <span class="">Register or update <br />a neighborhood organization</span>
+            <a href="forms/form-register.html">
+                              <span class="">Register <br />a neighborhood organization</span>
+            </a>
                             </div>
                           </div>
                         </div>
@@ -167,7 +179,9 @@
                           <div class="row">
                             <div class="col">
                               <img src="../images/icon/menu-3.png" class="d-inline-block">
-                              <span class="">Register or update a neighborhood organization</span>
+            <a href="/forms/form-search.html">
+                              <span class="">Search for a neighborhood organization</span>
+            </a>
                             </div>
                           </div>
                         </div>
@@ -177,7 +191,9 @@
                           <div class="row">
                             <div class="col">
                               <img src="../images/icon/menu-4.png" class="d-inline-block">
-                              <span class="">Register or update a neighborhood organization</span>
+            <a href="/forms/form-mailing_list.html">
+                              <span class="">Generate mailing list for a neighborhood organization</span>
+            </a>
                             </div>
                           </div>
                         </div>
@@ -188,9 +204,8 @@
               </div><!-- end row -->
             </div> <!-- dropdown-mega-menu.// -->
           </li>
-          <li class="nav-item"><a class="nav-link" href="#"> Information <br />& Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#service-head-info"> Information <br />& Resources</a></li>
         </ul>
-
       </div>
 
     </div>
@@ -269,14 +284,14 @@
               Neighborhood organization information continued…</h1>
             <h4>Organization type</h4>
             <div>
-              <label for="optsetogid3" onclick="chooseOrganizationType(this)">Homes Association, Homeowners Association, Property Owners Association</label>
+              <label id="homes_association" for="optsetogid3" onclick="chooseOrganizationType(this)">Homes Association, Homeowners Association, Property Owners Association</label>
               <input type="radio" id="optsetogid3" name="optset2" value="3"><br>
             	<div class="flex items-spaced">
-                <label for="optsetogid1" onclick="chooseOrganizationType(this)">Neighborhood Association</label>
+                <label id="neighborhood_association" for="optsetogid1" onclick="chooseOrganizationType(this)">Neighborhood Association</label>
                 <input type="radio" id="optsetogid1" name="optset2" value="1"><br>
-                <label for="optsetogid2" onclick="chooseOrganizationType(this)">Umbrella Organization</label>
+                <label id="umbrella_organization" for="optsetogid2" onclick="chooseOrganizationType(this)">Umbrella Organization</label>
                 <input type="radio" id="optsetogid2" name="optset2" value="2"><br>
-                <label for="optsetogid5" onclick="chooseOrganizationType(this)">Other</label>
+                <label id="other" for="optsetogid5" onclick="chooseOrganizationType(this)">Other</label>
               </div>
             </div>
 
@@ -336,7 +351,7 @@
                   <input id="instagram" placeholder="Instagram" size="15">
                 </div>
                 <div class="d-inline-block myp-2 p2-xtra">
-                  <input id="other" placeholder="Other" size="15">
+                  <input id="otherWebsite" placeholder="Other" size="15">
                 </div>
               </div>
             </div>
@@ -787,6 +802,7 @@
     const neighborhoodData = await response.json()
     console.log(neighborhoodData)
     chosenNeighborhood = neighborhoodData.data.neighborhood_associations;
+    chosenNeighborhood['district_id'] = "241";
 
     sessionStorage.neighborhoodChosen = JSON.stringify(neighborhoodData.data.neighborhood_associations)
     loadNeighborhoodData(event)
@@ -795,8 +811,83 @@
   function loadNeighborhoodData(event){
     document.getElementById("organizationName").value= event.target.value;
 
-    //turn this into API call that uses neighborhood id
-    let neighborhoodData = neighborhoods.filter( (neighborhood) => neighborhood.name == event.target.value );
+    //input address data
+    if(chosenNeighborhood){
+      document.getElementById("city").value = chosenNeighborhood.city;
+
+      document.getElementById("state").value = chosenNeighborhood.state;
+      
+      document.getElementById("streetAddress").value = chosenNeighborhood.address;
+      
+      document.getElementById("zipCode").value = chosenNeighborhood.zip;
+    }
+
+    //INPUT ORGINIZATION DATA
+
+    if(chosenNeighborhood.organization_type){
+      
+      if(chosenNeighborhood.organization_type === "Homes Association" || chosenNeighborhood.organization_type === "Homes Association, Homeowners Association, Property Owners Association"){
+        document.getElementById("homes_association").classList.toggle("selectedButton")
+      }
+      if(chosenNeighborhood.organization_type === "Neighborhood Association"){
+        document.getElementById("neighborhood_association").classList.toggle("selectedButton")
+      }
+      if(chosenNeighborhood.organization_type === "Umbrella Organization"){
+        document.getElementById("umbrella_organization").classList.toggle("selectedButton")
+      }
+      if(chosenNeighborhood.organization_type === "Other"){
+        document.getElementById("other").classList.toggle("selectedButton")
+      }
+    }
+
+    if(chosenNeighborhood['organization_boundaries']){
+      
+      if(chosenNeighborhood['organization_boundaries']['north_boundry']){
+        document.getElementById("northBoundary").value = chosenNeighborhood['organization_boundaries']['north_boundry']
+      }
+      if(chosenNeighborhood['organization_boundaries']['east_boundry']){
+        document.getElementById("eastBoundary").value = chosenNeighborhood['organization_boundaries']['east_boundry']
+      }
+      if(chosenNeighborhood['organization_boundaries']['south_boundry']){
+        document.getElementById("southBoundary").value = chosenNeighborhood['organization_boundaries']['south_boundry']
+      }
+      if(chosenNeighborhood['organization_boundaries']['west_boundry']){
+        document.getElementById("westBoundary").value = chosenNeighborhood['organization_boundaries']['west_boundry']
+      }
+      if(chosenNeighborhood['organization_boundaries']['approximate_boundry']){
+        document.getElementById("boundaries").value = chosenNeighborhood['organization_boundaries']['approximate_boundry']
+      }
+    }
+
+
+    //INPUT WEBSITES
+
+    if(chosenNeighborhood['website']){
+      document.getElementById('website').value = chosenNeighborhood['website']
+    }
+    if(chosenNeighborhood['newsletter']){
+      document.getElementById('newsletter').value = chosenNeighborhood['newsletter']
+    }
+    if(chosenNeighborhood['email']){
+      document.getElementById('email').value = chosenNeighborhood['email']
+    }
+    if(chosenNeighborhood['phone']){
+      document.getElementById('phone').value = chosenNeighborhood['phone']
+    }
+    if(chosenNeighborhood['facebook']){
+      document.getElementById('facebook').value = chosenNeighborhood['facebook']
+    }
+    if(chosenNeighborhood['twitter']){
+      document.getElementById('twitter').value = chosenNeighborhood['twitter']
+    }
+    if(chosenNeighborhood['instagram']){
+      document.getElementById('instagram').value = chosenNeighborhood['instagram']
+    }
+    if(chosenNeighborhood['other']){
+      document.getElementById('otherWebsite').value = chosenNeighborhood['other']
+    }
+
+
 
     //hide meeting cloned item
     if(chosenNeighborhood.meetings.length > 1){
@@ -815,21 +906,6 @@
       meetings[meetings.length - 1].insertAdjacentElement('afterend', meetingClone);
 
       console.log(meeting)
-
-      //input street data
-      if(neighborhoodData){
-        document.querySelectorAll("#city")[1].setAttribute("id", "city" + meetingCount);
-        document.getElementById("city").value = neighborhoodData[0].city;
-
-        document.querySelectorAll("#state")[1].setAttribute("id", "state" + meetingCount);
-        document.getElementById("state").value = neighborhoodData[0].state;
-        
-        document.querySelectorAll("#streetAddress")[1].setAttribute("id", "streetAddress" + meetingCount);
-        document.getElementById("streetAddress").value = neighborhoodData[0].street;
-        
-        document.querySelectorAll("#zipCode")[1].setAttribute("id", "zipCode" + meetingCount);
-        document.getElementById("zipCode").value = neighborhoodData[0].zip;
-      }
 
       document.querySelectorAll("#meeting_type")[1].setAttribute("id", "meeting_type" + meetingCount);
       document.getElementById("meeting_type" + meetingCount).value = meeting.meeting_kind;
@@ -1015,8 +1091,8 @@
   if(document.querySelector('#instagram').value){
     chosenNeighborhood['instagram'] = document.querySelector('#instagram').value;
   }
-  if(document.querySelector('#other').value){
-    chosenNeighborhood['other'] = document.querySelector('#other').value;
+  if(document.querySelector('#otherWebsite').value){
+    chosenNeighborhood['otherWebsite'] = document.querySelector('#otherWebsite').value;
   }
 
 
@@ -1141,21 +1217,21 @@
 
   console.log(chosenNeighborhood)
 
-  /* API CALL, turn on when ready
-    const response = await fetch(url, {
-      method: "POST",
-      mode: "cors",
-      cache: "no-cache",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      redirect: "follow",
-      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify(data), // body data type must match "Content-Type" header
-    });
-    return response.json();
-  */
+  const response = await fetch(url, {
+    method: "POST",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "same-origin",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow",
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(chosenNeighborhood), // body data type must match "Content-Type" header
+  });
+
+  const APIResponse = response.json();
+  console.log(APIResponse)
 
   window.location="./form-submission-response.html"
   }
@@ -1383,18 +1459,16 @@
       return false;
     }
     */
-    
-    // Otherwise, display the correct tab:
-    showTab(currentTab);
 
     if(document.getElementById("nextBtn").innerHTML === "Submit" && currentTab === 6){
       postData("https://app.pbidmanager.com/api/v1/neighborhood_associations/update_association", { answer: 42 }).then((data) => {
       //console.log(data); // JSON data parsed by `data.json()` call
-    });
-
-      //showPopUp('deleteMeetingPopUp')
-      //triggering when clicking next after meeting tab
+      });
+      return false
     }
+    
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
   }
 
   function validateForm() {
